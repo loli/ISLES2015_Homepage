@@ -8,6 +8,18 @@ $(window).scroll(function() {
     }
 });
 
+// Sticky Backtop
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 966) {
+        $('.backtop').addClass('sticky2');
+    } else {
+        $('.backtop').removeClass('sticky2');
+    }
+});
+
+
+
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
     if ($('.main_h').hasClass('open-nav')) {
