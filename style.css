@@ -1,3 +1,5 @@
+
+
 .main_h {
   position: fixed;
   top: 0px;
@@ -14,7 +16,7 @@
   padding-bottom: 6px;
   font-family: "Montserrat", sans-serif;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   .main_h {
     padding-top: 25px;
   }
@@ -38,7 +40,7 @@
 .logo {
   width: 50px;
   font-size: 25px;
-  color: #8f8f8f;
+  color: #368ca2;
   text-transform: uppercase;
   float: left;
   display: block;
@@ -46,7 +48,7 @@
   line-height: 1;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   .logo {
     float: none;
   }
@@ -54,9 +56,9 @@
 
 nav {
   float: right;
-  width: 60%;
+  width: 70%;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   nav {
     width: 100%;
   }
@@ -67,7 +69,7 @@ nav ul {
   text-align: right;
   float: right;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   nav ul {
     padding-top: 10px;
     margin-bottom: 22px;
@@ -81,7 +83,7 @@ nav ul li {
   margin-left: 35px;
   line-height: 1.5;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   nav ul li {
     width: 100%;
     padding: 7px 0;
@@ -89,7 +91,7 @@ nav ul li {
   }
 }
 nav ul a {
-  color: #888888;
+  color: #368ca2;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -106,7 +108,7 @@ nav ul a {
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 851px) {
   .mobile-toggle {
     display: block;
   }
@@ -125,7 +127,7 @@ nav ul a {
   max-width: 940px;
   margin: 0 auto;
   position: relative;
-  padding: 0 2%;
+  padding: 0 5%;
 }
 
 * {
@@ -133,9 +135,9 @@ nav ul a {
 }
 
 body {
-  color: #8f8f8f;
-  background: white;
-  font-family: "Cardo", serif;
+  color: #252525;
+  background: #F5F6F3;
+  font-family: Tahoma,Arial,Helvetica,sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
@@ -149,21 +151,25 @@ h1 {
   line-height: 1.8;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  color: #368ca2;
 }
 
 p {
   margin-bottom: 20px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 2;
 }
 
 .content {
-  padding: 50px 2% 250px;
+  padding: 40px 5% 40px;
+  background: white;
+  border: 1px solid gainsboro;
+  margin-top: 80px;
 }
 
 .hero {
   position: relative;
-  background: url(http://www.philippefercha.com/cd/toggle-menu-bg.jpg) no-repeat center center fixed;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/8/85/Bluthirnschranke_nach_Infarkt_nativ_und_KM.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -180,8 +186,8 @@ p {
 }
 .hero h1 span {
   font-size: 25px;
-  color: #e8f380;
-  border-bottom: 2px solid #e8f380;
+  color: #368ca2;
+  border-bottom: 2px solid #368ca2;
   padding-bottom: 12px;
   line-height: 3;
 }
@@ -192,7 +198,7 @@ p {
   width: 26px;
   height: 46px;
   border-radius: 13px;
-  border: 2px solid #e8f380;
+  border: 2px solid #368ca2;
   position: absolute;
   bottom: 40px;
   position: absolute;
@@ -245,3 +251,38 @@ p {
     transform: translateY(20px);
   }
 }
+
+.footer{
+	background: #F5F6F3;
+	color:#252525;
+	text-align: center;
+	padding:50px;
+}
+
+.backtop{
+	padding: 13px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background: none;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0;
+	border: 1px solid gainsboro;
+	font-weight: bold;
+}
+
+.sticky2 {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  
+}
+
+.backtop a{
+	color: #368ca2; 
+}
+
+
+
