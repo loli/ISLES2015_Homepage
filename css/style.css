@@ -168,25 +168,37 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb( 191, 134 , 20 );
+  color: rgb( 0, 106 , 163 );
+
 }
 
 
 h1 {
+  padding-top: 65px;
   font-size: 30px;
-  line-height: 2.9;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #005d6f;
 }
 
 h2 {
+
+  margin-top: 20px;
   font-size: 18px;
   line-height: 2.1;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #005d6f;
 }
+
+h3{
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 2.1;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #005d6f;}
 
 p {
   margin-bottom: 8px;
@@ -200,10 +212,11 @@ strong{
 }
 
 .content {
-  padding: 40px 6% 1px 6%;
+  padding: 0px 6% 1px 6%;
   background: white;
   border-left: 1px solid gainsboro;
   border-right: 1px solid gainsboro;
+
 }
 
 .hero {
@@ -226,7 +239,7 @@ strong{
 
 .container{
 
-background: rgba(208,208,208,.77);
+  background: rgba(208,208,208,.77);
   margin-left: auto;
   margin-right: auto;
   width:100%;
@@ -310,7 +323,7 @@ background: rgba(208,208,208,.77);
 	background: #F5F6F3;
 	color:#252525;
 	text-align: center;
-	padding:50px;
+	margin-bottom: 50px;
 }
 
 .backtop{
@@ -370,7 +383,8 @@ ol ol{
 	border-radius: .3em;
 	transition: all .3s ease-out;	
 	line-height: 1.6;
-	text-align: justify;
+	text-align: left;
+	margin-right: 40px;
 }
 
 .rounded-list li:before{
@@ -432,6 +446,68 @@ margin: 0 auto;
   max-width: 100%;
 }
 
+.button{
 
+width:auto;
+max-width: 220px;
+text-align: center;
+height:auto;
+padding:25px;
+border-radius: 9px;
+background: rgba(0,75,90,.88);
+color:#fff;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+}
 
+.button:hover{
+opacity: .8;
+}
 
+.image-footer{
+	width:33%;
+	float:left;
+	height:auto;
+	
+}
+
+.table-class{
+
+line-height:1.6;
+list-style: square;
+margin-left: 20px;
+
+}
+
+.list-class{
+
+line-height: 1.6;
+list-style: square;
+margin-left: 37px;
+margin-bottom: 8px;
+
+}
+
+.button-big{
+
+width:auto;
+max-width: 220px;
+min-height: 115px;
+text-align: center;
+height:auto;
+padding:25px;
+border-radius: 9px;
+background: rgba(0,75,90,.88);
+color:#fff;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+border:2px solid white;
+}
+
+.button-big:hover{
+opacity: .7;
+}
