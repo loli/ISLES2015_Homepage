@@ -227,7 +227,7 @@ strong{
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-top: 170px;
+  padding-top: 110px;
   min-height: 600px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
@@ -366,8 +366,7 @@ ol{
 	*list-style: decimal; /* Keep using default numbering for IE6/7 */
 	padding: 0;
 	margin-bottom: 0em;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
+	}
 
 ol ol{
 	margin: 0 0 0 2em; /* Add some left margin for inner lists */
@@ -403,6 +402,40 @@ ol ol{
 	border-radius: 2em;
 	transition: all .3s ease-out;
 	color:#fff;
+}
+
+.rounded-list2 li{
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	*padding: .4em;
+	margin: .5em 0 .5em 1em;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: all .3s ease-out;	
+	line-height: 1.6;
+	text-align: left;
+	margin-right: 40px;
+}
+
+.rounded-list2 li:before{
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;	
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #005d6f;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	text-align: center;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+	color:#005d6f;
+	font-size: 5px;
+	
 }
 
 .green li:before{
@@ -460,13 +493,14 @@ margin-top: 20px;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
+border: solid 2px white;
 }
 
 .button:hover{
 opacity: .8;
 }
 
-.image-footer{
+.image-footer {
 	width:33%;
 	float:left;
 	height:auto;
@@ -509,7 +543,48 @@ border:2px solid white;
 }
 
 .button-big:hover{
+
+opacity: .8;
+}
+
+.image-footer img:hover{
+opacity: .5;
+}
+
+.important{
+color: rgb(181,22,33);
+}
+
+table.gridtable {
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #ccc;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 10px;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ccc;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ccc;
+	background-color: #ffffff;
+}
+
+.classhover:hover{
 opacity: .7;
+cursor: pointer;
 }
 
 /* In-progress styles */
