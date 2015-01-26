@@ -11,7 +11,7 @@ jQuery.noConflict()
 
 jQuery.imageMagnify={
 	dsettings: {
-		magnifyby: 2, //default increase factor of enlarged image
+		magnifyby: 2.35, //default increase factor of enlarged image
 		duration: 500, //default duration of animation, in millisec
 		imgopacity: 0.2 //opacify of original image when enlarged image overlays it
  	},
