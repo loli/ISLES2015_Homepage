@@ -511,3 +511,12 @@ border:2px solid white;
 .button-big:hover{
 opacity: .7;
 }
+
+/* In-progress styles */
+.todo {
+    background-color: #FFFF00;
+}
+.mauricio {
+    background-color: #E8ADAA;
+}
+
