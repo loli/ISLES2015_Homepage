@@ -185,8 +185,9 @@ h1 {
 h2 {
 
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
-  line-height: 2.1;
+  line-height: 1.6;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #005d6f;
@@ -227,7 +228,7 @@ strong{
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-top: 110px;
+  padding-top: 160px;
   min-height: 600px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
@@ -496,6 +497,19 @@ margin-right: auto;
 border: solid 2px white;
 }
 
+.button-month{
+
+width:auto;
+max-width: 150px;
+text-align: center;
+height:auto;
+border-radius: 20px;
+background: rgba(0,75,90,.88);
+color:#fff;
+border:5px solid #fff;
+
+}
+
 .button:hover{
 opacity: .8;
 }
@@ -511,9 +525,18 @@ opacity: .8;
 
 line-height:1.6;
 list-style: square;
-margin-left: 20px;
+
 
 }
+
+.table-class li{
+
+padding-top: 10px;
+padding-bottom: 10px;
+margin-right: 0px;
+
+}
+
 
 .list-class{
 
@@ -595,3 +618,36 @@ cursor: pointer;
     background-color: #E8ADAA;
 }
 
+.important{
+	color:rgb(181,22,33);
+}
+
+@media print {
+    body {
+        background-image: none;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+    h1,h2,h3,p,a,a:visited{
+    color:black;}
+    nav{
+    display:none;
+    }
+    h1{
+    font-size:30px;
+    }
+    h2{
+    font-size: 20px;
+    }
+    .content{
+    border:none;}
+    .hero{
+    display:none;
+    }
+    
+    
+}
+.ml{
+margin-left: 20px;
+}

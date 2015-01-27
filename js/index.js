@@ -1,12 +1,10 @@
 // Sticky Header
-$(window).scroll(function() {
 
-    if ($(window).scrollTop() > 250) {
+
         $('.main_h').addClass('sticky');
-    } else {
-        $('.main_h').removeClass('sticky');
-    }
-});
+
+ 
+
 
 // Sticky Backtop
 $(window).scroll(function() {
