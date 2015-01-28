@@ -83,6 +83,7 @@
             <li>display menue always. !!DONE!!</li>
             <li>listing under dates: remove numbers and place month names in blue ellipses.!!DONE!!</li>
             <li>do all in-text to-dos</li>
+            <li>add TUM logo to GitHub</li>
             <li>adapt available space for new header.</li>
             <li>should the text in the li list be larger than in the normal text flow? -> Not in my opinion.</li>
             <li>add highlight class for important notices !!DONE!!</li>
@@ -168,18 +169,32 @@
 <h2>How it works</h2>
 <p>Interested participants can download a set of training cases with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before the MICCAI takes place, a set of test cases will be made available and the participants upload their segmentation results as well as a shot-paper describing their method. The organizers then evaluate each case and establish a ranking of the participating teams. At the MICCAI conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team presents their method as a poster and, Furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
 </div>
+
 <!-- #################################################### MOTIVATION #################################################### -->
 <div class="row content" >
-    <h1 class="sec04">Motivation</h1>
-    <span class="todo mauricio">Podrias andar algo aqui, sobre la motivation clinica y así?</span>
-    <h2>Clinical motivation</h2>
-<p><span class="todo">A stroke or colloquially brain attack is a sudden occurrence of brain disease, which often involves the loss of functions of the central nervous system and is caused by disturbance in the blood supply of the brain. Strokes can be classified into the groups ischemic, caused by undersupply of blood in a brain area, and hemorrhagic, caused by undersupply and pressure of leaking blood in a brain area due to a broken vessel.</span></p>
-	<div class="caption-long">	<img src="http://upload.wikimedia.org/wikipedia/commons/8/85/Bluthirnschranke_nach_Infarkt_nativ_und_KM.png" 				style="width: 100%; margin: 8px 0;">
-	<strong class="todo">Fig.:</strong> Defect of the blood-brain barrier after stroke shown in MRI. T1-weighted images, left image without right image with contrast medium administration.
-	</div>  
+
+	<h1 class="sec04">Motivation</h1>
+	<span class="todo mauricio">Podrias andar algo aqui, sobre la motivation clinica y así?</span>
+	<p>
+		<!-- What is ischemic stroke? -->
+  		Cerebrovascular disease is the second most common cause of death in the world and even survivors often face grave physical and mental disabilities. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
+  		<!-- Clinical motivation to segment ischemic stroke (fast diagnosis) -->
+  		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support the clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation.
+	</p>
+
+   <h2>Clinical motivation</h2>
+	<p>
+		To assess stroke treatments, such as thrombolytic therapy or embolectomy, and to discover suitable markers for sound treatment decisions, large clinical studies tracking the stroke development and outcome under controlled conditions are necessary. Automatic stroke segmentation facilitates the quantification of the stroke lesion over time.
+		The same holds true for quantitative studies aiming to answer the questions 'how an ischemic stroke evolves' and to discover the involved processes.
+	</p>
+	
 	<h2>Research motivation</h2>
-	<p><span class="todo">These lesions can be identified (segmented) in multimodal MRI imaging data. With this challenge, we aim to take a step forward to computer-aided methods for automatic segmentation of brain lesions. One clinical application could be the better understanding of specific brain area functions by connecting the caused dysfunction with the affected brain area. The required processes would be strongly simplified by automatic segmentation algorithms.</span></p>
+	<p>
+		Lesion to symptom mapping is a neurosciencentific approach used to detect correlations between brain areas and cognitive functions by means of negative samples. It requires manual segmentation of pathologies such as stroke lesions in many MR volumes, which is subject to high inter- and intra-observer variability, diminishing the validity of any gained insight as well as the reproducibility.
+		Furthermore, an automatic method would enable the fully automatic screening of routinely acquired scans. The resulting lesion volume could then be mapped to functional and/or anatomical brain areas, for example to identify suitable study candidates.
+	</p>
 </div>
+
 <!-- #################################################### RULES #################################################### -->
 <div class="row content" >
     <h1 class="sec05">Rules</h1>		
@@ -271,6 +286,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
   </tr>
 </table>
 <span class="todo">Update sequences</span>
+<span class="todo">Reduce space between list items!</span>
 </ol>
 <h2>Case characteristics</h2>
 <p><strong>SISS</strong></p>
@@ -297,6 +313,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
 <a href="https://www.virtualskeleton.ch/SISS/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in SISS</strong></div></a>
 <a href="https://www.virtualskeleton.ch/SPESS/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in SPESS</strong></div></a>
+<span class="todo">Place beside each other.</span>
 <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
     
@@ -448,6 +465,8 @@ $$recall=\dfrac{TP}{TP+FN},$$
 
 <h2>Contributers</h2>
 
+<span class="todo">No points for list, more intended table or other clearer and less space-costing design.</span>
+
 <ol class="rounded-list2 green" style="margin-left: 0;">
 			
 			<table style="width:100%;">
@@ -514,12 +533,7 @@ $$recall=\dfrac{TP}{TP+FN},$$
 <div class="footer">
 	
 	<h1>Any questions?</h1>
-	<h2>Contact</h2>
 	<p style="text-align:center;"></p><a href="mailto:maier@imi.uni-luebeck.de">maier@imi.uni-luebeck.de</a></p>
-	<h2>Legal Terms</h2>
-	<h2>Flyer</h2>
-	<h2>FAQ</h2>
-	
 	
 </div>
 
