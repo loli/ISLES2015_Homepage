@@ -54,7 +54,7 @@
 	}
 
 a:hover{
-color: rgb(208,208,208);
+color: rgb(101,101,101);
 }
 
 
@@ -107,7 +107,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-  color: rgb(208,208,208);
+  color: rgb(101,101,101);
 }
 
 
@@ -222,7 +222,7 @@ strong{
 
 .hero {
   position: relative;
-  background: url(http://upload.wikimedia.org/wikipedia/commons/8/85/Bluthirnschranke_nach_Infarkt_nativ_und_KM.png) no-repeat center center fixed;
+  background: url('../imgs/collage.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -345,7 +345,7 @@ strong{
 }
 
 .backtop:hover{
-	background:rgb(208,208,208);
+	background:rgb(101,101,101);
 }
 
 
