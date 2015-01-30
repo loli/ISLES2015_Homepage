@@ -74,6 +74,7 @@
             <li>display menue always. !!DONE!!</li>
             <li>listing under dates: remove numbers and place month names in blue ellipses.!!DONE!!</li>
             <li>do all in-text to-dos</li>
+            <li>lists shouldn't have a larger font size than the normal text</li>
             <li>add TUM logo to GitHub !!DONE!!</li>
             <li>adapt available space for new header.</li>
             <li>should the text in the li list be larger than in the normal text flow? -> Not in my opinion.</li>
@@ -95,12 +96,12 @@
 <div class="row content"> 
     <h1 class="sec01">Overview</h1>
     
-    <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES)</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the International Conference on Medical Image Computing and Computer Assisted Intervention <a class="reference external" href="http://www.miccai2015.org/" target="_blank">(MICCAI) 2015</a>. We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the two following tasks:</p>
+    <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES)</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI) 2015</a> (October 5-9th). We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the two following tasks:</p>
     
     <p class="ml"><strong>SISS:</strong> sub-acute ischemic stroke lesion segmentation</p>
     <p class="ml"><strong>SPES:</strong> perfusion-diffusion mismatch for stroke penumbra estimation</p>
     
-    <p>On this page, you can find details on how the challenge works in the <a class="reference internal" href=".sec03">About</a> section, the clinical <a class="reference internal" href=".sec04">Motivation</a> behind it, the <a class="reference internal" href=".sec05">Rules</a> of how to participate, the <a class="reference internal" href=".sec06">Data</a> description and the <a class="reference internal" href=".sec08">Evaluation</a> scheme.</p>
+    <p>On this page, you can find details on how the challenge works in the <a class="reference internal" href=".sec03">About</a> section, the clinical and research <a class="reference internal" href=".sec04">Motivation</a> behind it, the <a class="reference internal" href=".sec05">Rules</a> of how to participate, the <a class="reference internal" href=".sec06">Data</a> description and the <a class="reference internal" href=".sec08">Evaluation</a> scheme.</p>
 </div>
 </section>
 
@@ -114,7 +115,7 @@
         <table class="table-class" style="width:100%; list-style: none;">
             <tr>
                 <td><li class="button-month">February</li></td>
-                <td>Official launch of website</td>
+                <td>Official launch of the website</td>
             </tr>
             <tr>
                 <td><li class="button-month">April</li></td>
@@ -122,7 +123,7 @@
             </tr>
             <tr>
                 <td><li class="button-month">May</li></td>
-                <td>Opening of evaluation system</td>
+                <td>Opening of the evaluation system</td>
             </tr>
             <tr>
                 <td><li class="button-month">August</li></td>
@@ -150,7 +151,7 @@
             </tr>
             <tr>
                 <td><li class="button-month">December</li></td>
-                <td>Training data and evaluation made public</td>
+                <td>Training data and evaluation are made public</td>
             </tr>
         </table>
     </ul>
@@ -163,10 +164,10 @@
     <h1 class="sec03">About</h1>
     
     <h2>Why challenges?</h2>
-    <p>Medical image processing comprises a large number of tasks, for which new methods are regulary proposed. But, more often than not, it is difficult to to compare their fitness, as the reported results are obtained on private dataset. A challenge aims to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted. (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">here</a> for a detailed rationale behind challenges).</p>
+    <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than not, it is difficult to compare their fitness, as the reported results are obtained on private dataset. A challenge aims to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted. (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">here</a> for a detailed rationale behind challenges).</p>
 
     <h2>Past challenges</h2>
-    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community and especially in the scope of the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) and the <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been successfully organized. All of these are collect centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
+    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) and the <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
 
     <h2>The ISLES challenge</h2>
     <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">Motivation</a> and a large number of already existing methods. Each team will be free to participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and perfusion-diffusion mismatch for stroke penumbra estimation (SPES).</p>
@@ -175,7 +176,7 @@
     <p class="ml"><strong>SPES</strong>: <span class="todo mauricio">One-sentence description</span></p>
 
     <h2>How it works</h2>
-    <p>Interested participants can download a set of training cases with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before the MICCAI takes place, a set of test cases will be made available and the participants upload their segmentation results as well as a shot-paper describing their method. The organizers then evaluate each case and establish a ranking of the participating teams. At the MICCAI conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team presents their method as a poster and, Furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
+    <p>Interested participants can download a set of training cases with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before the MICCAI takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a shot-paper describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will present their method as a poster and, furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
 </div>
 </section>
 
@@ -214,11 +215,11 @@
     <h2>What is required to participate?</h2>
     <p>Each team wishing to participate in the ISLES challenge is required to:</p>
     <ol class="rounded-list green" style="margin-left: 0;">
-        <li>register at the data distribution and evaluation platform (see <a class="reference internal" href=".sec07">registration</a> for more details).</li>
-        <li>upload the test data segmentation results before the deadline (see <a class="reference internal" href=".sec02">Dates</a>)</li>
-        <li>submit a short paper describing their method and their results on the training data set (see <a class="reference internal" href=".sec11">Short Paper</a>)</li>
-        <li>register to the associated MICCAI workshop and pay the attendance fee (possible right up until the day of the challenge)</li>
-        <li>be present at the workshop with at least one team member</li>
+        <li>Register at the data distribution and evaluation platform (see <a class="reference internal" href=".sec07">registration</a> for more details).</li>
+        <li>Upload the test data segmentation results before the deadline (see <a class="reference internal" href=".sec02">Dates</a>).</li>
+        <li>Submit a short paper describing their method and their results on the training data set (see <a class="reference internal" href=".sec11">Short Paper</a>).</li>
+        <li>Register to the associated MICCAI workshop and pay the attendance fee (possible right up until the day of the challenge).</li>
+        <li>Be present at the workshop with at least one team member and present a poster.</li>
     </ol>
 
     <h2>Which methods are called for?</h2>
@@ -227,12 +228,12 @@
     <h2>Participating in one or both of the sub-task (SISS &amp; SPES)</h2>
     <p>We encourage all teams to apply their method to both of the sub-tasks to highlight its generalization ability. But it is equally possible to submit a specialized approach for each of the task or just to   ne of them.</p>
 
-    <h2>Organisational structure</h2>
-    <p>ISLES is organized as part of a larger full-day workshop at the MICCAI with the following organizational structure:</p>
+    <h2>Organizational structure</h2>
+    <p>ISLES is organized as part of a larger, three-part, full-day workshop at the MICCAI with the following organizational structure:</p>
     <div style="height:auto; overflow:hidden;">
         <div style="width:32.6%; float:left;">
             <div class="button-big">
-                <strong>BrainLes</strong></br>Brain Lesions Segmentation workshop
+                <strong>BrainLeS</strong></br>Brain Lesions Segmentation workshop
             </div>
         </div>
         <div style="width:32.6%; float:left;">
@@ -246,9 +247,8 @@
             </div>
         </div>
     </div>
-    <p>The three events should be regarded as a single workshop and a single registration allows to visit all of these and to participate in them. Please note that each part has its own rules of active participation.</p>
-    <p><span class="todo">Link buttons to web-pages when available.</p>
-    <p>A number of special rules applies to simplify the participation in multiple of these events.</p>
+    <p>The three events should be regarded as a single workshop and a single registration allows to visit all of these and to participate in them. Please note that each part has its own rules of active participation, which can be found on their respective web-pages.</p>
+    <p><span class="todo">Link buttons to web-pages when available. Create larger frame around buttins to denote the roof-workshop. Create two small areas inside ISLES button containing SISS and SPES.</p>
     
     <h2>Participation in the Brain Tumor Image Segmentation (BRATS) challenge</h2>
     <p>The organizers of ISLES and BRATS took care to apply the same pre-processing steps to their data, to enable the participants of one of the challenges to furthermore participate in the respective other. Especially machine learning based approaches should be easy to adapt. Double contributions are highly welcome and only one registration at the MICCAI workshop is required.</p>
@@ -264,7 +264,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>A team can submit results from multiple methods, but an extra registration to the MICCAI challenge is required for each additionally submitted result.</p>
 
     <h2>Privacy and data copyright</h2>
-    <p>By registering, each team agrees to use the provided data only in the scope of the workshop and neither pass it on to a third party nor use it for other publications. After the workshop took place, the data will be released under a research license.</p>
+    <p>By registering, each team agrees to use the provided data only in the scope of the workshop and neither pass it on to a third party nor use it for other publications. After the workshop took place, the data will be released under a research license. The copyright of all methods developed with the image data stays with the developing team.</p>
 </div>
 </section>
 
@@ -276,7 +276,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     
     <h2>Image format</h2>
     <p>Compressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> format: <strong>*.nii.gz</strong>.</p>
-    <p>(I/O libs: <a class="reference external" href="https://pypi.python.org/pypi/MedPy">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/">Nibabel</a> (Python))</p>
+    <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/">Nibabel</a> (Python))</p>
     
     <h2>Pre-processing</h2>
     <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
@@ -346,7 +346,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <a href="https://www.virtualskeleton.ch/SISS/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in SISS</strong></div></a>
     <a href="https://www.virtualskeleton.ch/SPESS/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in SPESS</strong></div></a>
     
-    <span class="todo">Place beside each other.</span>
+    <span class="todo">Place beside each other. Or, probably will both link to the same page!</span>
     <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
 </section>
@@ -360,15 +360,15 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p><span class="todo mauricio">Here we explain the evaluation measures used by SISS. Shouldn't we somehow try to use similar ones? And do you not also compute the perfusion, defusion mismatch? How do you evaluate that in the tables on VSD, I've been missing it there. Anyway, you should add the SPES evaluation measures here too.</span></p>
     
     <h2>Expert segmentations</h2>
-    <p>All expert segmentation were prepared by experience raters. For SISS, two sets will be made available, for SPES one.</p>
+    <p>All expert segmentation were prepared by experienced raters. For SISS, two ground-truth sets will be made available, for SPES one.</p>
     
     <h2>Evaluation measures</h2>
-    <p>Three principal evaluation measures are employed to evaluate the quality of a segmentation compared to the reference ground-truth: The <strong>Dice's coefficient</strong> (DC, see <a class="reference external" href="http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient" target="_blank">[wikiDC]</a>) denotes the volume overlap, the <strong>average symmetric surface distance</strong> (ASSD) the surface fit and the <strong>Hausdorff distance</strong> (HD, see <a class="reference external" href="http://en.wikipedia.org/wiki/Hausdorff_distance" target="_blank">[wikiHD]</a>) the maximum error. Furthermore, <strong>precision</strong> &amp; <strong>recall</strong> (see <a class="reference external" href="http://en.wikipedia.org/wiki/Precision_and_recall" target="_blank">[wikiPreAndRec]</a>) are provided to reveal over- resp. under-segmentation, but won't be used in the computation of the team ranks, as they are indirectly reflected by the DC value.</p>
+    <p>Three principal evaluation measures are employed to evaluate the quality of a segmentation compared to the reference ground-truth: The <strong>Dice's coefficient</strong> (DC) denotes the volume overlap, the <strong>average symmetric surface distance</strong> (ASSD) the surface fit and the <strong>Hausdorff distance</strong> (HD) the maximum error. Furthermore, <strong>precision</strong> &amp; <strong>recall</strong> are provided to reveal over- respectively under-segmentation, but will not be used in the computation of the team ranks, as they are indirectly reflected by the DC value.</p>
     
         <h3>Dice's coefficient (DC)</h3>
         <p>The DC measures the similarity between two datasets. Considering two sets of volume voxels \(A\) and \(B\), the \(DC\) value is given as:</p>
 	    <p>$$DC=\dfrac{2|A\cap B|}{|A|+|B|}$$</p>
-        <p>A value of 0 indicates no overlap, a value of 1 perfect similarity. During interpretation, it should be kept in mind that the \(DC\) is known to yield higher values for larger volumes i.e. a \(DC\) of 0.9 for lung segmentation is considered average, as is a \(DC\) of 0.60 for MS lesions.</p>
+        <p>A value of 0 indicates no overlap, a value of 1 perfect similarity. During interpretation, it should be kept in mind that the \(DC\) is known to yield higher values for larger volumes i.e. a \(DC\) of 0.9 for lung segmentation is considered average, as is a \(DC\) of 0.6 for multiple sclerosis lesions.</p>
         
         <div class="caption-short">
             <img src="imgs/dice_pic.png" alt="Dice's coefficient" style="width: 100%; margin: 8px 0;">
@@ -393,7 +393,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 	    
         <div class="caption-long">
             <img src="imgs/hausdorff_pic.png" style="width: 100%; margin: 8px 0;">
-	        <strong>Fig.:</strong> Example showing the minimal distances between two surface points \(a\) and \(b\) being not symetric.
+	        <strong>Fig.:</strong> Example showing the minimal distances between two surface points \(a\) and \(b\) being not symmetric.
         </div>
         
         <p><span class="todo">End of doubtfull part.</span></p>
@@ -411,8 +411,9 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
             <img src="imgs/p-r.png"	style="width: 100%; margin: 8px 0;">
 	        <strong>Fig.:</strong> Gray circle: Segmented poins. Green circle: Reference points.
         </div>  
-	        
-    <h2>Ranking</h2>
+	     
+	   
+    <h2 class="secRanking">Ranking</h2>
     <p>To establish a teams rank, the following steps are performed:</p>
     <ol class="rounded-list green" style="margin-left: 0;">
         <li>Compute the DC, ASSD &amp; HD values for each case</li>
@@ -428,16 +429,16 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     </div>  	
 
         <h3>Very easy or difficult cases</h3>
-        <p>By not averaging the actual evaluation measures, but rather the ranks in each, the system is not affected by very dfficult or easy cases: If all methods return low results on one case, the small difference will still count in the ranking and the overall image won't be distorted.</p>
+        <p>By not averaging the actual evaluation measures, but rather the ranks in each, the system is not affected by very difficult or easy cases: If all methods return low results on one case, even a small difference between them will still count in the ranking. Thus, the overall impression of a method will not be distorted.</p>
 
         <h3>Missing or not processable cases</h3>
-        <p>If a case has not been uploaded or couldn't be processed for some reason, the associated team will be assigned the last place for this case.</p>
+        <p>If a case has not been uploaded or could not be processed for some reason, the associated team will be assigned the last place for this case.</p>
         
         <h3>Complete mismatch</h3>
         <p>A complete mismatch (i.e. a DC value of 0) will be treated just as a missing case as detailed above (and the obtained ASSD &amp; HD values ignored).</p>
 
         <h3>Shared ranks</h3>
-        <p>Multiple teams can share a single rank. This will then be always the highest, e.g.:</p>
+        <p>Multiple teams can share a single rank. In such a case, the following rank will be left empty, e.g.:</p>
 
         <div style="height:auto; overflow:hidden;">
             <div style="width:32.6%; float:left;">
