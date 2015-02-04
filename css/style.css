@@ -36,7 +36,7 @@
 }
 
 .logo {
-  width: 65px;
+  width: 155px;
   font-size: 25px;
   color: #fff;
   text-transform: uppercase;
@@ -44,12 +44,20 @@
   margin-top: 0;
   line-height: 1;
   margin-bottom: 10px;
-  }
+  background-image: url('../imgs/logo_final_white.png');background-position: left;background-repeat: no-repeat; margin-top:-20px;height:60px;>
 
-.logo img:hover{
+  }
+  
+
+
+.logo:hover{
+
 	background-image: url('../imgs/logo_final_yellow.png');
 	background-position: left;
 	background-repeat: no-repeat;
+
+	
+	
 }
 
 a:hover{
@@ -168,8 +176,10 @@ body {
 
 a {
   text-decoration: none;
-  border-bottom: 1px dotted #252525;
-  color: #252525;
+  color: rgb(0,97,122); 
+    -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 
 }
 
@@ -347,6 +357,9 @@ strong{
 
 .backtop:hover{
 	background:rgb(208,208,208);
+	-webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 
@@ -410,15 +423,15 @@ ol ol{
 .rounded-list2 li{
 	position: relative;
 	display: block;
-	padding: .4em .4em .4em 2em;
+	padding: .1em .1em .1em 1em;
 	*padding: .4em;
-	margin: .5em 0 .5em 1em;
+	margin: .2em 0 .2em 1em;
 	text-decoration: none;
 	border-radius: .3em;
 	transition: all .3s ease-out;	
 	line-height: 1.6;
 	text-align: left;
-	margin-right: 40px;
+	font-size: 15px;
 }
 
 .rounded-list2 li:before{
@@ -514,6 +527,9 @@ border:5px solid #fff;
 
 .button:hover{
 opacity: .8;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .image-footer {
@@ -570,10 +586,17 @@ border:2px solid white;
 .button-big:hover{
 
 opacity: .8;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .image-footer img:hover{
 opacity: .5;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+
 }
 
 .important{
@@ -589,7 +612,7 @@ table.gridtable {
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	text-align: left;
 	margin-top: 10px;
 }
 table.gridtable th {
@@ -610,6 +633,9 @@ table.gridtable td {
 .classhover:hover{
 opacity: .7;
 cursor: pointer;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 /* In-progress styles */
@@ -653,3 +679,4 @@ cursor: pointer;
 .ml{
 margin-left: 20px;
 }
+
