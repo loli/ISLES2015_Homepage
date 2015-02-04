@@ -47,14 +47,13 @@
   }
 
 .logo img:hover{
-	background-image: url('../imgs/brain_gray.png');
+	background-image: url('../imgs/logo_final_yellow.png');
 	background-position: left;
 	background-repeat: no-repeat;
-
-	}
+}
 
 a:hover{
-color: rgb(101,101,101);
+color: rgb(191,134,20);
 }
 
 
@@ -104,10 +103,11 @@ nav ul a {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
+  border:none;
 }
 
 nav ul a:hover {
-  color: rgb(101,101,101);
+  color: rgb(191,134,20);
 }
 
 
@@ -168,7 +168,8 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb( 0, 106 , 163 );
+  border-bottom: 1px dotted #252525;
+  color: #252525;
 
 }
 
@@ -345,7 +346,7 @@ strong{
 }
 
 .backtop:hover{
-	background:rgb(101,101,101);
+	background:rgb(208,208,208);
 }
 
 
@@ -385,6 +386,7 @@ ol ol{
 	line-height: 1.6;
 	text-align: left;
 	margin-right: 40px;
+	font-size: 15px;
 }
 
 .rounded-list li:before{
