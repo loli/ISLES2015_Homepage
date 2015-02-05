@@ -82,6 +82,13 @@ a:hover{
 color: rgb(191,134,20);
 }
 
+a:visited{
+color: rgb(59,178,160);
+}
+
+a:visited:hover{
+color: rgb(191,134,20);
+}
 
 @media only screen and (max-width: 940px) {
   .logo {
@@ -544,7 +551,7 @@ border:5px solid #fff;
 }
 
 .button:hover{
-opacity: .8;
+border-color:rgb(191,134,20);
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
@@ -583,6 +590,30 @@ margin-bottom: 8px;
 
 }
 
+.button-small{
+
+width:auto;
+max-width: 85px;
+min-height: 45px;
+text-align: center;
+height:auto;
+padding:25px;
+border-radius: 9px;
+background: rgba(0,75,90,.88);
+color:#fff;
+margin-top: 20px;
+margin-bottom: 20px;
+border:2px solid white;
+}
+
+.button-small:hover{
+border-color:rgb(191,134,20);
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+ 
+}
+
 .button-big{
 
 width:auto;
@@ -601,9 +632,27 @@ margin-right: auto;
 border:2px solid white;
 }
 
+.button-bigger{
+
+width:auto;
+max-width: 100%;
+min-height: 115px;
+text-align: center;
+height:auto;
+padding:25px;
+border-radius: 9px;
+background: rgba(0,75,90,.88);
+color:#fff;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+border:2px solid white;
+}
+
 .button-big:hover{
 
-opacity: .8;
+border-color:rgb(191,134,20);
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
@@ -632,6 +681,7 @@ table.gridtable {
 	margin-right: auto;
 	text-align: left;
 	margin-top: 10px;
+	margin-left: 0;
 }
 table.gridtable th {
 	border-width: 1px;
