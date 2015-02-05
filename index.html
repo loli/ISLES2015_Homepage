@@ -166,7 +166,7 @@
     <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team will be free to participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and perfusion-diffusion mismatch for stroke penumbra estimation (SPES).</p>
 
     <p class="ml"><strong>SISS</strong>: Automatic segmentation of ischemic stroke lesion volumes from multi-spectral MRI sequences acquired in the sub-acute stroke development stage.</p>
-    <p class="ml"><strong>SPES</strong>: <span class="todo mauricio">One-sentence description</span></p>
+    <p class="ml"><strong>SPES</strong>: Automatic segmentation of acute ischemic stroke from multi-spectral MRI sequences.</p>
 
     <h2>How it works</h2>
     <p>Interested participants can download a set of training cases with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before the MICCAI 2015 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a shot-paper describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2015 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will present their method as a poster and, furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
@@ -177,11 +177,9 @@
 <section>
 <div class="row content">
 	<h1 class="sec04">Motivation</h1>
-	<span class="todo mauricio">Podrias andar algo aqui, sobre la motivation clinica y así?</span>
-	
 	<p>
 		<!-- What is ischemic stroke? -->
-  		Cerebrovascular disease is the second most common cause of death in the world and even survivors often face grave physical and mental disabilities. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
+  		Stroke is the second most frequent cause of death and a major cause of disability in industrial countries. In patients who survive, stroke is often associated with high socioeconomic costs due to persistent disability. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
   		<!-- Clinical motivation to segment ischemic stroke (fast diagnosis) -->
   		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support the clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation and <a href="http://dx.doi.org/10.1016/j.jneumeth.2014.11.011" target="_blank">Maier et al. (2014)</a> [<a lass="reference file" href="pdf/OskarMaier.IschemicStrokeLesionSegmentation.preprint.pdf" target="_blank">preprint</a>] for a recent method.
 	</p>
@@ -314,7 +312,34 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p><span class="todo">Right side's font-size still to large.</span></p>
     
     <p><strong>SPES</strong></p>
-    <p><span class="todo mauricio">See SISS section above for what should go here.</span></p>
+    <ol class="rounded-list2 green" style="margin-left: 0;">
+		<table style="width:100%;">
+            <tr>
+                <td><li># cases:</li></td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td><li># training cases:</li></td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td><li># testing cases:</li></td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td><li># centers:</li></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><li># expert segmentation sets:</li></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><li>MRI sequences:</li></td>
+                <td>T1c, T2, ADC, CBF, CBV,  MTT, Tmax</td>
+            </tr>
+        </table>
+    </ol>    
     
     
     <h2>Case characteristics</h2>
@@ -333,7 +358,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     -->
     
     <p><strong>SPES</strong></p>
-    <span class="todo mauricio">Could you add here something similar to the description of the SISS data above?</span>
+    <p><span class="note">Coming soon.</span></p>
 </div>
 </section>
     
@@ -343,7 +368,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <h1 class="sec07">Participate</h1>
     <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
     
-    <a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div></a>
+    <!--<a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"></a>-->
+    <div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div>
     <span class="note" style="margin-left: 255px;">Will be enabled when the registration opens.<br /><br /></span><!-- TODO: Remove in time -->
     
     <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
@@ -353,10 +379,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 <!-- #################################################### EVALUATION #################################################### -->
 <section>
 <div class="row content">
-    <h1 class="sec08">Evaluation (SISS)</h1>
+    <h1 class="sec08">Evaluation (SISS & SPES)</h1>
     <p>The evaluation comprises three evaluation measures, each of them highlighting different aspects of the segmentation quality. From the computed evaluation scores, the global rating of each team is established as described below.</p>
-    
-    <p><span class="todo mauricio">Here we explain the evaluation measures used by SISS. Shouldn't we somehow try to use similar ones? And do you not also compute the perfusion, defusion mismatch? How do you evaluate that in the tables on VSD, I've been missing it there. Anyway, you should add the SPES evaluation measures here too.</span></p>
     
     <h2>Expert segmentations</h2>
     <p>All expert segmentation were prepared by experienced raters. For SISS, two ground-truth sets will be made available, for SPES one.</p>
