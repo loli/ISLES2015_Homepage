@@ -49,10 +49,10 @@
 #logo_image_fader img {
     position:   absolute;
     left:       0;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition:    opacity 0.3s;
-    -o-transition:      opacity 0.3s;
-    transition:         opacity 0.3s;
+    -webkit-transition: opacity ;
+    -moz-transition:    opacity ;
+    -o-transition:      opacity ;
+    transition:         opacity ;
 }
 
 #logo_image_fader:hover img.top {
@@ -60,10 +60,10 @@
 }
 
 #logo_image_fader:hover {
-    -webkit-transition: color 0.3s;
-    -moz-transition:    color 0.3s;
-    -o-transition:      color 0.3s;
-    transition:         color 0.3s;
+    -webkit-transition: color ;
+    -moz-transition:    color ;
+    -o-transition:      color ;
+    transition:         color ;
     color:              rgb(191,134,20);  
 }
 
@@ -593,26 +593,19 @@ margin-bottom: 8px;
 .button-small{
 
 width:auto;
-max-width: 85px;
-min-height: 45px;
+max-width: 95px;
+min-height: 40px;
 text-align: center;
 height:auto;
-padding:25px;
+padding:10px;
 border-radius: 9px;
-background: rgba(0,75,90,.88);
+background: none;
 color:#fff;
 margin-top: 20px;
 margin-bottom: 20px;
 border:2px solid white;
 }
 
-.button-small:hover{
-border-color:rgb(191,134,20);
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
- 
-}
 
 .button-big{
 
@@ -623,13 +616,14 @@ text-align: center;
 height:auto;
 padding:25px;
 border-radius: 9px;
-background: rgba(0,75,90,.88);
+background: none;
 color:#fff;
 margin-top: 20px;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
 border:2px solid white;
+background: rgba(0,75,90,.7);
 }
 
 .button-bigger{
@@ -641,7 +635,7 @@ text-align: center;
 height:auto;
 padding:25px;
 border-radius: 9px;
-background: rgba(0,75,90,.88);
+background: rgba(0,75,90,.6);
 color:#fff;
 margin-top: 20px;
 margin-bottom: 20px;
