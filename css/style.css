@@ -637,14 +637,14 @@ table.gridtable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #ccc;
+	border-color: #fff;
 	background-color: #dedede;
 }
 table.gridtable td {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #ccc;
+	border-color: #fff;
 	background-color: #ffffff;
 }
 
@@ -663,9 +663,28 @@ cursor: pointer;
 .mauricio {
     background-color: #E8ADAA;
 }
+.note {
+    font-size: 12px;
+    background-color: #ddd;
+}
 
 .important{
 	color:rgb(181,22,33);
+}
+
+#contributors dt {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+}
+
+#contributors dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 @media print {
