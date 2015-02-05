@@ -157,19 +157,19 @@
     <h1 class="sec03">About</h1>
     
     <h2>Why challenges?</h2>
-    <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than not, it is difficult to compare their fitness, as the reported results are obtained on private datasets. A challenge aims to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted. (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">here</a> for a detailed rationale behind challenges).</p>
+    <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than desireable, it is difficult to compare their fitness, as the reported results are obtained on private datasets. Challenge aim to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted. (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">grand-challenge.org</a> for a detailed rationale behind challenges).</p>
 
     <h2>Past challenges</h2>
     <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) and the <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
 
     <h2>The ISLES challenge</h2>
-    <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team will be free to participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and perfusion-diffusion mismatch for stroke penumbra estimation (SPES).</p>
+    <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team may participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and perfusion-diffusion mismatch for stroke penumbra estimation (SPES).</p>
 
     <p class="ml"><strong>SISS</strong>: Automatic segmentation of ischemic stroke lesion volumes from multi-spectral MRI sequences acquired in the sub-acute stroke development stage.</p>
-    <p class="ml"><strong>SPES</strong>: <span class="todo mauricio">One-sentence description</span></p>
+    <p class="ml"><strong>SPES</strong>: Automatic segmentation of acute ischemic stroke from multi-spectral MRI sequences.</p>
 
     <h2>How it works</h2>
-    <p>Interested participants can download a set of training cases with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before the MICCAI 2015 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a shot-paper describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2015 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will present their method as a poster and, furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
+    <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2015 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2015 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will present their method as a poster and, furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
 </div>
 </section>
 
@@ -177,13 +177,11 @@
 <section>
 <div class="row content">
 	<h1 class="sec04">Motivation</h1>
-	<span class="todo mauricio">Podrias andar algo aqui, sobre la motivation clinica y así?</span>
-	
 	<p>
 		<!-- What is ischemic stroke? -->
-  		Cerebrovascular disease is the second most common cause of death in the world and even survivors often face grave physical and mental disabilities. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
+  		Stroke is the second most frequent cause of death and a major cause of disability in industrial countries. In patients who survive, stroke is often associated with high socioeconomic costs due to persistent disability. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
   		<!-- Clinical motivation to segment ischemic stroke (fast diagnosis) -->
-  		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support the clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation and <a href="http://dx.doi.org/10.1016/j.jneumeth.2014.11.011" target="_blank">Maier et al. (2014)</a> [<a lass="reference file" href="pdf/OskarMaier.IschemicStrokeLesionSegmentation.preprint.pdf" target="_blank">preprint</a>] for a recent method.
+  		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support the clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation and <a href="http://dx.doi.org/10.1016/j.jneumeth.2014.11.011" target="_blank">Maier et al. (2014)</a> [<a lass="reference file" href="pdf/OskarMaier.IschemicStrokeLesionSegmentation.preprint.pdf" target="_blank">preprint</a>] or <a href="http://dx.doi.org/10.1109/IEMBS.2007.4352610" target="_blank">Kabir et al. (2007)</a> for recent methods.
 	</p>
 
     <h2>Clinical motivation</h2>
@@ -269,7 +267,7 @@ workshop & challenge event at MICCAI 2015 in Munich</p></strong>
 
     <p>The three events should be regarded as a single workshop and a single registration allows to visit all of these and to participate in them. Please note that each part has its own rules of active participation, which can be found on their respective web-pages. The tentative schedule can be found <a class="reference file" href="pdf/tentative_schedule.pdf" target="_blank">here</a>, more information will follow.</p>
     <p><span class="todo">A: Create larger frame around buttons to denote the roof-workshop. B: Create two small areas inside ISLES button containing SISS and SPES.</p>
-    <p><span class="todo">@Oskar: Let me know, what you think about this.</p>
+    <p><span class="todo">@Oskar: Let me know, what you think about this.</span></p>
     
     <h2>Participation in the Brain Tumor Image Segmentation (BRATS) challenge</h2>
     <p>The organizers of ISLES and BRATS took care to apply the same pre-processing steps to their data, to enable the participants of one of the challenges to furthermore participate in the respective other. Especially machine learning based approaches should be easy to adapt. Double contributions are highly welcome and only one registration at the MICCAI 2015 workshop is required.</p>
@@ -285,7 +283,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>A team can submit results from multiple methods, but an extra registration to the MICCAI 2015 challenge is required for each additionally submitted result.</p>
 
     <h2>Privacy and data copyright</h2>
-    <p>By registering, each team agrees to use the provided data only in the scope of the workshop and neither pass it on to a third party nor use it for other publications. After the workshop took place, the data will be released under a research license. The copyright of all methods developed with the image data stays with the developing team.</p>
+    <p>By registering, each team agrees to use the provided data only in the scope of the workshop and neither pass it on to a third party nor use it for other publications. After the workshop took place, the data will be released under a research license. No copyright transfer of any kind will take place.</p>
 </div>
 </section>
 
@@ -297,40 +295,46 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     
     <h2>Image format</h2>
     <p>Compressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> format: <strong>*.nii.gz</strong>.</p>
-    <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/">Nibabel</a> (Python))</p>
+    <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab))</p>
     
     <h2>Pre-processing</h2>
     <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
     
     <h2>Data details</h2>
-    <p><strong>SISS</strong></p>    
-    <table class="gridtable">
-<tr>
-	<th># cases:</th><th>50-100</th>
-</tr>
-<tr>
-	<td># training cases:</td><td>~50</td></tr>
-<tr>
-	<th># testing cases:</th><th>~30</th>
-</tr>
-<tr>
-	<td># centers:</td><td>2</td>
-</tr>
-<tr>
-	<th># expert segmentation sets:</th><th>1 (train), 2 (test)</th>
-</tr>
-<tr>
-                <td>MRI sequences:</td>
-                <td><a class="reference external" href="http://en.wikipedia.org/wiki/Fluid-attenuated_inversion_recovery" target="_blank">FLAIR</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93spin_relaxation" target="_blank">T2w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Spin%20Echo" target="_blank">TSE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93lattice_relaxation" target="_blank">T1w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Field%20Echo" target="_blank">TFE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Diffusion_MRI#Diffusion_imaging" target="_blank">DWI with ADC map</a> <span class="note">(preliminary)</span></td>
-            </tr>
-</table>
-    
-    <p><span class="todo">Re-think the design of this list: It does not provide a good overview, the way it is right now. Maybe better a table? Or without dots?</span></p>
-    <p><span class="todo">@ Oskar: How about that?</span></p>
+    <p><strong>SISS</strong></p>
+    <table class="gridtable" style="margin-left: 20px;">
+        <tr>
+	        <th># cases:</th><th>~50 training &amp; ~30 testing</th>
+        </tr>
+        <tr>
+	        <td># centers:</td><td>2</td>
+        </tr>
+        <tr>
+	        <th># expert segmentation sets:</th><th>1 (train), 2 (test)</th>
+        </tr>
+        <tr>
+            <td>MRI sequences:</td>
+            <td><a class="reference external" href="http://en.wikipedia.org/wiki/Fluid-attenuated_inversion_recovery" target="_blank">FLAIR</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93spin_relaxation" target="_blank">T2w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Spin%20Echo" target="_blank">TSE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93lattice_relaxation" target="_blank">T1w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Field%20Echo" target="_blank">TFE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Diffusion_MRI#Diffusion_imaging" target="_blank">DWI with ADC map</a> <span class="note">(preliminary)</span></td>
+        </tr>
+    </table>
     
     <p><strong>SPES</strong></p>
-    <p><span class="todo mauricio">See SISS section above for what should go here.</span></p>
-    
+    <table class="gridtable" style="margin-left: 20px;">
+        <tr>
+	        <th># cases:</th><th>~30 training &amp; ~20 testing</th>
+        </tr>
+        <tr>
+	        <td># centers:</td><td>1</td>
+        </tr>
+        <tr>
+	        <th># expert segmentation sets:</th><th>1</th>
+        </tr>
+        <tr>
+            <td>MRI sequences:</td>
+            <td>T1c, T2, ADC, CBF, CBV,  MTT, Tmax</td>
+        </tr>
+    </table>
+    <span class="todo">Könnten wir die irgendwie nebeneinander platzieren? Aber mit weißem Abstand zwischen Ihnen?</span>
     
     <h2>Case characteristics</h2>
     <p><strong>SISS</strong></p>
@@ -348,7 +352,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     -->
     
     <p><strong>SPES</strong></p>
-    <span class="todo mauricio">Could you add here something similar to the description of the SISS data above?</span>
+    <p><span class="note">Coming soon.</span></p>
 </div>
 </section>
     
@@ -358,8 +362,9 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <h1 class="sec07">Participate</h1>
     <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
     
-    <a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div></a>
-   <div style="text-align: center;"> <span class="note">Will be enabled when the registration opens.<br /><br /></span></div><!-- TODO: Remove in time -->
+    <!--<a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"></a>-->
+    <div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div>
+    <span class="note" style="margin-left: 255px;">Will be enabled when the registration opens.<br /><br /></span><!-- TODO: Remove in time -->
     
     <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
@@ -368,10 +373,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 <!-- #################################################### EVALUATION #################################################### -->
 <section>
 <div class="row content">
-    <h1 class="sec08">Evaluation (SISS)</h1>
+    <h1 class="sec08">Evaluation (SISS & SPES)</h1>
     <p>The evaluation comprises three evaluation measures, each of them highlighting different aspects of the segmentation quality. From the computed evaluation scores, the global rating of each team is established as described below.</p>
-    
-    <p><span class="todo mauricio">Here we explain the evaluation measures used by SISS. Shouldn't we somehow try to use similar ones? And do you not also compute the perfusion, defusion mismatch? How do you evaluate that in the tables on VSD, I've been missing it there. Anyway, you should add the SPES evaluation measures here too.</span></p>
     
     <h2>Expert segmentations</h2>
     <p>All expert segmentation were prepared by experienced raters. For SISS, two ground-truth sets will be made available, for SPES one.</p>
@@ -416,12 +419,12 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 	     
 	   
     <h2 class="secRanking">Ranking</h2>
-    <p>To establish a teams rank, the following steps are performed:</p>
+    <p>To establish a team's rank, the following steps are performed:</p>
     <ol class="rounded-list green" style="margin-left: 0;">
         <li>Compute the DC, ASSD &amp; HD values for each case</li>
-        <li>Establish each teams rank for DC, ASSD &amp; HD separately for each dataset</li>
-        <li>Compute the mean rank over all three evaluation measures/case to obtain the teams rank for the case</li>
-        <li>Compute the mean over all case-specific ranks to obtain the teams final rank</li>
+        <li>Establish each team's rank for DC, ASSD &amp; HD separately for each dataset</li>
+        <li>Compute the mean rank over all three evaluation measures/case to obtain the team's rank for the case</li>
+        <li>Compute the mean over all case-specific ranks to obtain the team's final rank</li>
     </ol>
     <p>This scheme is furthermore detailed in the following figure:</p>
 
@@ -455,11 +458,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p><a href="mailto:mauricio.reyes@istb.unibe.com">Reyes, Mauricio</a>, Institute for Surgical Technology &amp; Biomechanics, Universität Bern.</p>	
 
     <h2>Contributors</h2>
-    <span class="todo">@Laszlo: Which style would your prefer?</span><br />
-    <span class="todo">I prefer the the first style. Looks very nice.</span><br />
     <span class="todo mauricio">Mauricio, could you check the Adresses here and tell me, who else should be listed as contributor?</span>
-    
-    <h3>Style I</h3>
+
     <dl id="contributors">
         <dt>Image data preparation</dt><dd>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</dd>
         <dt>Web-page design</dt><dd>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</dd>
@@ -470,88 +470,6 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
         <dt>Evaluation management</dt><dd>The Virtual Skeleton Database</dd>
         <dt>Expertise and support</dt><dd>Krämer, Ulrike, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>  
     </dl>
-    
-    <h3>Style II</h3>
-    <div style="height:auto; overflow:hidden;">
-        <div style="width:auto; text-align:left;">
-            <table class="gridtable">
-                <tr>
-                    <td>Image data preparation:</td>
-                    <td>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</td>
-                </tr>
-                <tr>
-                    <td>Web-page design:</td>
-                    <td>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</td>
-                </tr>
-                <tr>
-                    <td>SISS image data source I:</td>
-                    <td>Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck</td>
-                </td>
-                </tr>
-                <tr>
-                    <td>SISS image data source II:</td>
-                    <td>Clinic for Neuroradiology, Technische Universität München</td>
-                </td>
-                </tr>
-                <tr>
-                    <td>SPES image data source:</td>
-                    <td>Institute for Neuroradiology, Universitätsspital Bern</td></td>
-                </tr>
-                <tr>
-                    <td>Data download management:</td>
-                    <td>The Virtual Skeleton Database</td>
-                </tr>
-                <tr>
-                    <td>Evaluation management:</td>
-                    <td>The Virtual Skeleton Database</td>
-                </tr>
-                <tr>
-                    <td>Expertise and support:</td>
-                    <td>Krämer, Ulrike, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-    <h3>Style III</h3>
-    <ol class="rounded-list2 green" style="margin-left: 0;">
-        <table style="width:auto;">
-            <tr>
-                <td><li>Image data preparation:</li></td>
-                <td>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</td>
-            </tr>
-            <tr>
-                <td><li>Web-page design:</li></td>
-                <td>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</td>
-            </tr>
-            <tr>
-                <td><li>SISS image data source I:</li></td>
-                <td>Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck</td>
-            </td>
-            </tr>
-            <tr>
-                <td><li>SISS image data source II:</li></td>
-                <td>Clinic for Neuroradiology, Technische Universität München</td>
-            </td>
-            </tr>
-            <tr>
-                <td><li>SPES image data source:</li></td>
-                <td>Institute for Neuroradiology, Universitätsspital Bern</td></td>
-            </tr>
-            <tr>
-                <td><li>Data download management:</li></td>
-                <td>The Virtual Skeleton Database</td>
-            </tr>
-            <tr>
-                <td><li>Evaluation management:</li></td>
-                <td>The Virtual Skeleton Database</td>
-            </tr>
-            <tr>
-                <td><li>Expertise and support:</li></td>
-                <td>Krämer, Ulrike, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck</td>
-            </tr>
-        </table>
-    </ol>
 
 </div>
 </section>
