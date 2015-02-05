@@ -223,7 +223,12 @@
 
     <h2>Organizational structure</h2>
     <p>ISLES is organized as part of a larger, three-part, full-day workshop at the MICCAI 2015 with the following organizational structure:</p>
-    <div style="height:auto; overflow:hidden;">
+    
+   	<div class ="button-bigger" style="height:auto; overflow:hidden;">
+	<strong><p>Full-day
+workshop & challenge event at MICCAI 2015 in Munich</p></strong>
+
+	
         <div style="width:32.6%; float:left;">
             <a href="http://www.brainlesion-workshop.org" target="_blank">
                 <div class="button-big">
@@ -231,12 +236,27 @@
                 </div>
             </a>
         </div>
-        <div style="width:32.6%; float:left;">
-            <a href="http://www.isles-challenge.org" target="_blank">
-                <div class="button-big">
+        <div style="width:32.6%; float:left; max-height:220px;">
+            <a href="http://www.isles-challenge.org" target="_blank" style="color:#fff;">
+                <div class="button-big" style="height:200px;">
                     <strong>ISLES</strong></br>Ischemic Stroke Lesion Segmentation challenge
                 </div>
             </a>
+                
+                         <div style="width:49.6%; float:left;position:relative; top:-130px;">
+         	<a href="#" target="_blank">
+         	<div class="button-small" style="float:right; margin-right:2px;">SISS</div>
+         	</a>
+        </div>
+                
+         
+         		         <div style="width:49.6%; float:left;position:relative; top:-130px;">
+         	<a href="#" target="_blank">
+         	<div class="button-small" style="float:left;margin-left:2px;">SPES</div>
+         	</a>
+        </div>
+        
+        
         </div>
         <div style="width:32.6%; float:left;">
             <div class="button-big">
@@ -246,8 +266,10 @@
         </div>
         
     </div>
+
     <p>The three events should be regarded as a single workshop and a single registration allows to visit all of these and to participate in them. Please note that each part has its own rules of active participation, which can be found on their respective web-pages. The tentative schedule can be found <a class="reference file" href="pdf/tentative_schedule.pdf" target="_blank">here</a>, more information will follow.</p>
     <p><span class="todo">A: Create larger frame around buttons to denote the roof-workshop. B: Create two small areas inside ISLES button containing SISS and SPES.</p>
+    <p><span class="todo">@Oskar: Let me know, what you think about this.</p>
     
     <h2>Participation in the Brain Tumor Image Segmentation (BRATS) challenge</h2>
     <p>The organizers of ISLES and BRATS took care to apply the same pre-processing steps to their data, to enable the participants of one of the challenges to furthermore participate in the respective other. Especially machine learning based approaches should be easy to adapt. Double contributions are highly welcome and only one registration at the MICCAI 2015 workshop is required.</p>
@@ -281,37 +303,30 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
     
     <h2>Data details</h2>
-    <p><strong>SISS</strong></p>
-    <ol class="rounded-list2 green" style="margin-left: 0;">
-		<table style="width:100%;">
-            <tr>
-                <td><li># cases:</li></td>
-                <td>50-100</td>
-            </tr>
-            <tr>
-                <td><li># training cases:</li></td>
-                <td>~50</td>
-            </tr>
-            <tr>
-                <td><li># testing cases:</li></td>
-                <td>~30</td>
-            </tr>
-            <tr>
-                <td><li># centers:</li></td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td><li># expert segmentation sets:</li></td>
-                <td>1 (train), 2 (test)</td>
-            </tr>
-            <tr>
-                <td><li>MRI sequences:</li></td>
+    <p><strong>SISS</strong></p>    
+    <table class="gridtable">
+<tr>
+	<th># cases:</th><th>50-100</th>
+</tr>
+<tr>
+	<td># training cases:</td><td>~50</td></tr>
+<tr>
+	<th># testing cases:</th><th>~30</th>
+</tr>
+<tr>
+	<td># centers:</td><td>2</td>
+</tr>
+<tr>
+	<th># expert segmentation sets:</th><th>1 (train), 2 (test)</th>
+</tr>
+<tr>
+                <td>MRI sequences:</td>
                 <td><a class="reference external" href="http://en.wikipedia.org/wiki/Fluid-attenuated_inversion_recovery" target="_blank">FLAIR</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93spin_relaxation" target="_blank">T2w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Spin%20Echo" target="_blank">TSE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93lattice_relaxation" target="_blank">T1w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Field%20Echo" target="_blank">TFE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Diffusion_MRI#Diffusion_imaging" target="_blank">DWI with ADC map</a> <span class="note">(preliminary)</span></td>
             </tr>
-        </table>
-    </ol>
+</table>
+    
     <p><span class="todo">Re-think the design of this list: It does not provide a good overview, the way it is right now. Maybe better a table? Or without dots?</span></p>
-    <p><span class="todo">Right side's font-size still to large.</span></p>
+    <p><span class="todo">@ Oskar: How about that?</span></p>
     
     <p><strong>SPES</strong></p>
     <p><span class="todo mauricio">See SISS section above for what should go here.</span></p>
@@ -344,7 +359,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
     
     <a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"><div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div></a>
-    <span class="note" style="margin-left: 255px;">Will be enabled when the registration opens.<br /><br /></span><!-- TODO: Remove in time -->
+   <div style="text-align: center;"> <span class="note">Will be enabled when the registration opens.<br /><br /></span></div><!-- TODO: Remove in time -->
     
     <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
@@ -441,6 +456,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 
     <h2>Contributors</h2>
     <span class="todo">@Laszlo: Which style would your prefer?</span><br />
+    <span class="todo">I prefer the the first style. Looks very nice.</span><br />
     <span class="todo mauricio">Mauricio, could you check the Adresses here and tell me, who else should be listed as contributor?</span>
     
     <h3>Style I</h3>
