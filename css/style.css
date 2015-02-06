@@ -36,48 +36,29 @@
 
 }
 
-#logo_image_fader {
-    position:       relative;
-    height:         60px;
-    width:          155px;
-    color:          #fff;
-    text-transform: uppercase;
-    margin-bottom:  10px;
-    margin-top:     -20px;
-}
-
-#logo_image_fader img {
-    position:   absolute;
-    left:       0;
-    -webkit-transition: opacity ;
-    -moz-transition:    opacity ;
-    -o-transition:      opacity ;
-    transition:         opacity ;
-}
-
-#logo_image_fader:hover img.top {
-    opacity:    0;
-}
-
-#logo_image_fader:hover {
-    -webkit-transition: color ;
-    -moz-transition:    color ;
-    -o-transition:      color ;
-    transition:         color ;
-    color:              rgb(191,134,20);  
-}
-
 .logo {
-  width: 155px;
-  font-size: 25px;
-  color: #fff;
-  text-transform: uppercase;
-  float: left;
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 10px;
-  }
 
+  width: 140px;
+   font-size: 25px;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: 0;
+   line-height: 1;
+   margin-bottom: 10px;
+  	background-image: url('../imgs/logo_final_white_text.png');background-position: left;background-repeat: no-repeat; margin-top:-20px;height:60px;>
+
+   }
+  
+
+.logo:hover{
+ 	background-image: url('../imgs/logo_final_yellow_text.png');
+ 	background-position: left;
+ 	background-repeat: no-repeat;
+ 	  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+ 	
 a:hover{
 color: rgb(191,134,20);
 }
@@ -156,6 +137,7 @@ nav ul a:hover {
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
+
 @media only screen and (max-width: 940px) {
   .mobile-toggle {
     display: block;
@@ -169,6 +151,7 @@ nav ul a:hover {
   background: #fff;
   display: block;
 }
+
 
 .row {
   width: 100%;
@@ -678,6 +661,7 @@ table.gridtable {
 	margin-left: 0;
 }
 table.gridtable th {
+	width:50%;
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
@@ -685,6 +669,7 @@ table.gridtable th {
 	background-color: #dedede;
 }
 table.gridtable td {
+	width:50%;
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
@@ -754,7 +739,13 @@ cursor: pointer;
     .hero{
     display:none;
     }
-    
+    .backtop{
+    display: none;
+    }
+    #logo_image_fader{
+    display: none;
+    }
+
     
 }
 .ml{
