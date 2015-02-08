@@ -79,7 +79,7 @@ $('nav a').click(function(event) {
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
-    }, 500);
+    }, 200);
     event.preventDefault();
 });
 
@@ -90,7 +90,7 @@ $('a').click(function(event) {
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
-    }, 500);
+    }, 200);
     event.preventDefault();
 });
 
@@ -100,6 +100,33 @@ $('logo a').click(function(event) {
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
-    }, 500);
+    }, 200);
     event.preventDefault();
+});
+
+
+// Fullsize startpicture & active section in navigation
+
+var x = $(window).height();
+$('.hero').css('height',x);
+
+var sections = $('section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight()+47;
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      
+      $(this).addClass('active');
+      nav.find('a[href=".sec'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
 });
