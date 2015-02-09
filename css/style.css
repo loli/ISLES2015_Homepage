@@ -176,7 +176,7 @@ nav ul a:hover {
 
 body {
   color: #252525;
-background: #F5F6F3;
+
   font-family: Tahoma,Arial,Helvetica,sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -234,14 +234,13 @@ strong{
 .content {
   padding: 0px 6% 1px 6%;
   background: white;
-  border-left: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
+  padding-bottom: 65px;
 
 }
 
 .hero {
   position: relative;
-  background: url('../imgs/collage.png') no-repeat center center fixed;
+  background: url('../imgs/collage_final_2.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -327,10 +326,23 @@ strong{
 }
 
 .footer{
-background: #F5F6F3;
+
 	color:#252525;
 	text-align: center;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+.footer a{
+color:#fff;
+}
+
+.footer a:hover{
+color:rgb(191,134,20);
+}
+
+.footer h1{
+color:#fff;
+padding-top: 40px;
 }
 
 .backtop{
@@ -408,7 +420,7 @@ ol ol{
 	height: 2em;
 	width: 2em;
 	line-height: 2em;
-	border: .3em solid #fff;
+	margin-left:.3em;
 	text-align: center;
 	border-radius: 2em;
 	transition: all .3s ease-out;
@@ -504,7 +516,7 @@ margin-top: 20px;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
-border: solid 2px white;
+border: solid 3px #f1f1f1;
 }
 
 .button-month{
@@ -571,8 +583,6 @@ padding:10px;
 border-radius: 9px;
 background: none;
 color:#fff;
-margin-top: 20px;
-margin-bottom: 20px;
 border:2px solid white;
 }
 
@@ -611,7 +621,6 @@ margin-top: 20px;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
-border:2px solid white;
 }
 
 .button-big:hover{
@@ -761,3 +770,8 @@ section.active {}
    margin-right: auto;
    height: 360px;
    background: rgba(208,208,208,.77);
+}
+   
+section{
+	border-top: solid 1px #ddd;
+}

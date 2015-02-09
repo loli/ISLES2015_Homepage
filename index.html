@@ -70,7 +70,7 @@
 
 <!-- #################################################### IMPORTANT NOTICES #################################################### -->
 <section>
-<div class="row content important" style="border-top:none; margin-top:60px; border-top:solid 1px gainsboro;"> 
+<div class="row content important"> 
 
     <h1 class="sec10">Important Notices</h1>
     <p>
@@ -85,8 +85,8 @@
 </section>
 
 <!-- #################################################### OVERVIEW #################################################### -->
-<section id="01">
-<div class="row content"> 
+<section id="01"  style="background-color:#f1f1f1;">
+<div class="row content"  style="background-color:#f1f1f1;"> 
     <h1 class="sec01">Overview</h1>
     
     <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES)</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) 2015 (October 5-9th). We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the two following tasks:</p>
@@ -152,8 +152,8 @@
 </section>
 
 <!-- #################################################### ABOUT #################################################### -->
-<section id="03">
-<div class="row content">
+<section id="03"  style="background-color:#f1f1f1;">
+<div class="row content"  style="background-color:#f1f1f1;">
     <h1 class="sec03">About</h1>
     
     <h2>Why challenges?</h2>
@@ -199,8 +199,8 @@
 </section>
 
 <!-- #################################################### RULES #################################################### -->
-<section id="05">
-    <div class="row content">
+<section id="05"  style="background-color:#f1f1f1;">
+    <div class="row content"  style="background-color:#f1f1f1;">
     <h1 class="sec05">Rules</h1>		
 
     <h2>What is required to participate?</h2>
@@ -223,32 +223,32 @@
     <p>ISLES is organized as part of a larger, three-part, full-day workshop at the MICCAI 2015 with the following organizational structure:</p>
     
    	<div class ="button-bigger" style="height:auto; overflow:hidden;">
-	<strong><p style="font-size:18px;">Full-day
+	<strong><p style="font-size:18px; text-align:center;">Full-day
 workshop & challenge event at MICCAI 2015 in Munich</p></strong>
 
 	
-        <div style="width:32.6%; float:left;">
+        <div style="width:33.2%; float:left;">
             <a href="http://www.brainlesion-workshop.org" target="_blank">
                 <div class="button-big">
                     <strong>BrainLeS</strong></br>Brain Lesions Segmentation workshop
                 </div>
             </a>
         </div>
-        <div style="width:32.6%; float:left; height:200px;">
+        <div style="width:33.2%; float:left; height:200px;">
             <a href=".sec12" target="_blank" style="color:#fff;">
                 <div class="button-big">
                     <strong>ISLES</strong></br>Ischemic Stroke Lesion Segmentation challenge
                 </div>
             </a>
                 
-                         <div style="width:49.6%; float:left;position:relative; top:-100px;">
+                         <div style="width:49.6%; float:left;position:relative; top:-80px;">
          	
          	<div class="button-small" style="float:right; margin-right:2px;">SISS</div>
          
         </div>
                 
          
-         		         <div style="width:49.6%; float:left;position:relative; top:-100px;">
+         		         <div style="width:49.6%; float:left;position:relative; top:-80px;">
          	
          	<div class="button-small" style="float:left;margin-left:2px;">SPES</div>
          	
@@ -256,7 +256,7 @@ workshop & challenge event at MICCAI 2015 in Munich</p></strong>
         
         
         </div>
-        <div style="width:32.6%; float:left;">
+        <div style="width:33.2%; float:left;">
             <div class="button-big">
                 <strong>BRATS</strong></br>Brain Tumor Image Segmentation challenge
             </div>
@@ -367,8 +367,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 </section>
     
 <!-- #################################################### PARTICIPATE #################################################### -->
-<section id="07">
-<div class="row content">
+<section id="07"  style="background-color:#f1f1f1;">
+<div class="row content"  style="background-color:#f1f1f1;">
     <h1 class="sec07">Participate</h1>
     <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
     
@@ -398,7 +398,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
         <p>A value of 0 indicates no overlap, a value of 1 perfect similarity. During interpretation, it should be kept in mind that the \(DC\) is known to yield higher values for larger volumes i.e. a \(DC\) of 0.9 for lung segmentation is considered average, as is a \(DC\) of 0.6 for multiple sclerosis lesions.</p>
         
         <div class="caption-short">
-            <img src="imgs/dice_pic.png" alt="Dice's coefficient" style="width: 100%; margin: 8px 0;">
+            <img src="imgs/dice_pic_comp.png" alt="Dice's coefficient" style="width: 100%; margin: 8px 0;">
 	        <strong>Fig.:</strong> The two sets \(A\), \(B\) and their union.
         </div>  
 	
@@ -423,7 +423,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
            
         <p>Both measure take values in the range of \([0,1]\). A relatively high precision compared to the recall reveals under-segmentation and vice-versa, as depicted in the following figure:</p>
         <div class="caption-short">
-            <img src="imgs/p-r.png"	style="width: 100%; margin: 8px 0;">
+            <img src="imgs/p-r_comp.png"	style="width: 100%; margin: 8px 0;">
 	        <strong>Fig.:</strong> Gray circle: Segmented points. Green circle: Reference points.
         </div>  
 	     
@@ -459,8 +459,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 </section>
 
 <!-- #################################################### ORGANIZERS #################################################### -->
-<section id="09">
-<div class="row content" style=" padding-bottom:40px;border-bottom:none; ">
+<section id="09"  style="background-color:#f1f1f1;">
+<div class="row content" style=" padding-bottom:40px;border-bottom:none; background-color:#f1f1f1;">
 	<h1 class="sec09">Organizers</h1>
     <p>This challenge is organized by</p>
     <p><a href="mailto:maier@imi.uni-luebeck.de">Maier, Oskar</a>, Institute of Medical Inform., Universität zu Lübeck (directed by Prof. Dr. rer. nat. habil. Heinz Handels)</p>	
@@ -485,8 +485,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 </section>
 
 <!-- Footer -->
-<footer>
-    <div style="width:100%; max-width:940px; padding:0 6%;background:rgb(88,105,121); margin-left:auto; margin-right:auto; border: solid 1px gainsboro; border-top: none; overflow:hidden; padding-bottom: 25px;">
+<footer style="background:rgb(88,105,121);">
+    <div style="width:100%; max-width:940px; padding:0 6%;background:rgb(88,105,121); margin-left:auto; margin-right:auto; overflow:hidden; padding-bottom: 25px;">
         <div class="image-footer">
             <a href="http://www.uni-luebeck.de/" target="_blank"><img src="imgs/Logo_Uni_Luebeck_300dpi_weiss.png" style="margin-top:20px;width:100%;float:left;"></a>
         </div>
@@ -507,7 +507,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <div class="footer">
 	
 	    <h1>Any questions?</h1>
-	    <p style="text-align:center;"></p><a href="mailto:maier@imi.uni-luebeck.de">maier@imi.uni-luebeck.de</a></p>
+	    <p style="text-align:center;"><a href="mailto:maier@imi.uni-luebeck.de">maier@imi.uni-luebeck.de</a></p>
 	
     </div>
 

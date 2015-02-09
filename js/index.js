@@ -105,10 +105,7 @@ $('logo a').click(function(event) {
 });
 
 
-// Fullsize startpicture & active section in navigation
-
-var x = $(window).height();
-$('.hero').css('height',x);
+// Active section in navigation
 
 var sections = $('section')
   , nav = $('nav')
