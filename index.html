@@ -69,17 +69,17 @@
 </section>
 
 <!-- #################################################### IMPORTANT NOTICES #################################################### -->
-<section>
+<!--<section>
 <div class="row content important"> 
 
     <h1 class="sec10">Important Notices</h1>
     <p>
         <ol class="rounded-list green" style="margin-left: 0;">
-            <li>last proof reading</li>                                                        
+            <li></li>
         </ol>
     </p>
 </div>
-</section>
+</section>-->
 
 <!-- #################################################### OVERVIEW #################################################### -->
 <section id="01"  style="background-color:#f1f1f1;">
@@ -89,7 +89,7 @@
     <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES)</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) 2015 (October 5-9th). We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the two following tasks:</p>
     
     <p class="ml"><strong>SISS:</strong> sub-acute ischemic stroke lesion segmentation</p>
-    <p class="ml"><strong>SPES:</strong> acute ischemic stroke penumbra estimation</p>
+    <p class="ml"><strong>SPES:</strong> acute stroke penumbra estimation</p>
     
     <p>On this page, you can find details on how the challenge works in the <a class="reference internal" href=".sec03">about</a> section, the clinical and research <a class="reference internal" href=".sec04">motivation</a> behind it, the <a class="reference internal" href=".sec05">rules</a> of how to participate, the <a class="reference internal" href=".sec06">data</a> description and the <a class="reference internal" href=".sec08">evaluation</a> scheme.</p>
 </div>
@@ -154,10 +154,10 @@
     <h1 class="sec03">About</h1>
     
     <h2>Why challenges?</h2>
-    <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than desirable, it is difficult to compare their fitness, as the reported results are obtained on private datasets. Challenge aim to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">grand-challenge.org</a> for a detailed rationale behind challenges).</p>
+    <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than desirable, it is difficult to compare their fitness, as the reported results are obtained on private datasets. Challenges aim to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">grand-challenge.org</a> for a detailed rationale behind challenges).</p>
 
     <h2>Past challenges</h2>
-    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the MICCAI and the <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
+    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the MICCAI and <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
 
     <h2 class="sec12">The ISLES challenge</h2>
     <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team may participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and acute stroke penumbra estimation (SPES).</p>
@@ -178,7 +178,7 @@
 		<!-- What is ischemic stroke? -->
   		Stroke is the second most frequent cause of death and a major cause of disability in industrial countries. In patients who survive, stroke is often associated with high socioeconomic costs due to persistent disability. Its most frequent manifestation is the ischemic stroke, triggered by local thrombosis, hemodynamic factors or embolic causes,
   		<!-- Clinical motivation to segment ischemic stroke (fast diagnosis) -->
-  		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support the clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation and <a href="http://dx.doi.org/10.1016/j.jneumeth.2014.11.011" target="_blank">Maier et al. (2014)</a> [<a lass="reference file" href="pdf/OskarMaier.IschemicStrokeLesionSegmentation.preprint.pdf" target="_blank">preprint</a>] or <a href="http://dx.doi.org/10.1109/IEMBS.2007.4352610" target="_blank">Kabir et al. (2007)</a> for recent methods.
+  		whose diagnosis often involves the acquisition of brain magnetic resonance (MR) scans to assess the stroke lesion presence, location, extent, evolution and other factors. An automated method to locate, segment and quantify the lesion area would support clinicians and researchers, rendering their findings more robust and reproducible. See <a href="http://dx.doi.org/10.1016/j.nicl.2012.10.003" target="_blank">Rekik et al. (2012)</a> for a plea for automatic stroke lesion segmentation and <a href="http://dx.doi.org/10.1016/j.jneumeth.2014.11.011" target="_blank">Maier et al. (2014)</a> [<a lass="reference file" href="pdf/OskarMaier.IschemicStrokeLesionSegmentation.preprint.pdf" target="_blank">preprint</a>] or <a href="http://dx.doi.org/10.1109/IEMBS.2007.4352610" target="_blank">Kabir et al. (2007)</a> for recent methods.
 	</p>
 
     <h2>Clinical motivation</h2>
@@ -265,9 +265,9 @@ workshop & challenge event at MICCAI 2015 in Munich</p></strong>
     <p>The three events should be regarded as a single workshop and a single registration allows to visit all of these and to participate in them. Please note that each part has its own rules of active participation, which can be found on their respective web-pages. The tentative schedule can be found <a class="reference file" href="pdf/tentative_schedule.pdf" target="_blank">here</a>, more information will follow.</p>
 
     <h2>Participation in the Brain Tumor Image Segmentation (BRATS) challenge</h2>
-    <p>The organizers of ISLES and BRATS took care to apply the same pre-processing steps to their data, to enable the participants of one of the challenges to furthermore participate in the respective other. Especially machine learning based approaches should be easy to adapt. Double contributions are highly welcome and only one registration at the MICCAI 2015 workshop is required.</p>
+    <p>The organizers of ISLES and BRATS took care to apply the same pre-processing steps to their data, enabling the participants of one of the challenges to furthermore participate in the respectivly other. Especially machine learning based approaches should be easy to adapt. Double contributions are highly welcome and only one registration at the MICCAI 2015 workshop is required.</p>
     
-    <h2>Data usage of ISLES and BRATS for the Brain Lesion Segmentation (BrainLeS) workshop</h2>
+    <h2>Usage of ISLES and BRATS data for the Brain Lesion Segmentation (BrainLeS) workshop</h2>
     <p>Participants are free to use the training data from both, ISLES and BRATS, to evaluate methods submitted to BrainLeS, but are then encouraged to also participate in the respective challenge. In such case, they are not required to submit the short-paper to ISLES respectively BRATS, instead their (accepted) BrainLeS manuscript will suffice, as long as it states the results obtained on the training set.</p>
 
     <h2 class="sec11">Short paper</h2>
@@ -289,8 +289,8 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>The data for both sub-tasks, SISS and SPES, are pre-processed in a consistent manner to allow easy application of a method to both problems.</p>
     
     <h2>Image format</h2>
-    <p>Compressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> format: <strong>*.nii.gz</strong>.</p>
-    <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab))</p>
+    <p>Compressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> (NIfTI) format: <strong>*.nii.gz</strong>.</p>
+    <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab), <a class="reference external" href="http://www.itk.org/" target="_blank">ITK</a> (C++))</p>
     
     <h2>Pre-processing</h2>
     <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
@@ -373,7 +373,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div>
     <div style="text-align: center;"><span class="note">Will be enabled when the registration opens.</br></br></span></div><!-- TODO: Remove in time -->
     
-    <p>There you'll find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
+    <p>There you will find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
 </section>
     
@@ -414,9 +414,9 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
         <p>Similar to the \(ASSD\), the \(HD\) is given in \(mm\) and a lower value denotes a better segmentation.</p>
         
         <h3>Precision &amp; Recall</h3>
-        <p>The \(precision\) (also called positive predictive value) and \(recall\) (also known as sensitivity) of two sets can be defined as</p>
+        <p>The \(precision\) (also called positive predictive value) and \(recall\) (also known as sensitivity) of two sets are defined as</p>
         <p>$$precision=\dfrac{TP}{TP+FP}$$ and $$recall=\dfrac{TP}{TP+FN}$$</p>
-        <p>where \(TP\) (true positive) are the overlapping points, \(FP\) (false positive) are the wrong segmented points in the segmentation and \(FN\) (false negative) are the not segmented points in the reference.</p>
+        <p>where \(TP\) (true positive) denotes the overlapping points, \(FP\) (false positive) the wrong segmented points in the segmentation and \(FN\) (false negative) the not segmented points in the reference.</p>
            
         <p>Both measure take values in the range of \([0,1]\). A relatively high precision compared to the recall reveals under-segmentation and vice-versa, as depicted in the following figure:</p>
         <div class="caption-short">
@@ -447,7 +447,7 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
         <p>If a case has not been uploaded or could not be processed for some reason, the associated team will be assigned the last place for this case.</p>
         
         <h3>Complete mismatch</h3>
-        <p>A complete mismatch (i.e. a \(DC\) value of 0) will be treated just as a missing case as detailed above (and the obtained \(ASSD\) &amp; \(HD\) values ignored).</p>
+        <p>A complete mismatch (i.e. a \(DC\) value of 0) will be seen as a missing case and treated as detailed above (the obtained \(ASSD\) &amp; \(HD\) values are then ignored).</p>
 
         <h3>Shared ranks</h3>
         <p>Multiple teams can share a single rank. In such a cases, the following rank will be left empty.</p>
