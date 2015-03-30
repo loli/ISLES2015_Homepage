@@ -69,17 +69,20 @@
 </section>
 
 <!-- #################################################### IMPORTANT NOTICES #################################################### -->
-<!--<section>
+<section>
 <div class="row content important"> 
 
     <h1 class="sec10">Important Notices</h1>
     <p>
         <ol class="rounded-list green" style="margin-left: 0;">
-            <li></li>
+            <li><a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">Registration</a> now open</li>
+            <li>Guidelines behind the expert ground-truth added under <a href=".sec08">Evaluation</a></li>
+            <li>Workshop date fixed: October the 5th 2015</li>
         </ol>
     </p>
+    
 </div>
-</section>-->
+</section>
 
 <!-- #################################################### OVERVIEW #################################################### -->
 <section id="01"  style="background-color:#f1f1f1;">
@@ -89,7 +92,7 @@
     <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES)</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2015.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) 2015 (October 5-9th). We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the two following tasks:</p>
     
     <p class="ml"><strong>SISS:</strong> sub-acute ischemic stroke lesion segmentation</p>
-    <p class="ml"><strong>SPES:</strong> acute stroke penumbra estimation</p>
+    <p class="ml"><strong>SPES:</strong> acute stroke outcome/penumbra estimation</p>
     
     <p>On this page, you can find details on how the challenge works in the <a class="reference internal" href=".sec03">about</a> section, the clinical and research <a class="reference internal" href=".sec04">motivation</a> behind it, the <a class="reference internal" href=".sec05">rules</a> of how to participate, the <a class="reference internal" href=".sec06">data</a> description and the <a class="reference internal" href=".sec08">evaluation</a> scheme.</p>
 </div>
@@ -132,7 +135,7 @@
                 <td>Deadline for submitting test data results</td>
             </tr>
             <tr>
-                <td><li class="button-month">October the 5th or 9th 2015</li></td>
+                <td><li class="button-month">5th October 2015</li></td>
                 <td>MICCAI 2015 workshop and award presentation</td>
             </tr>
             <tr>
@@ -160,10 +163,10 @@
     <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the MICCAI and <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
 
     <h2 class="sec12">The ISLES challenge</h2>
-    <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team may participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and acute stroke penumbra estimation (SPES).</p>
+    <p>With ISLES, we provide such a challenge covering ischemic stroke lesion segmentation in multi-spectral MRI data. The task is backed by a well established clinical and research <a class="reference internal" href=".sec04">motivation</a> and a large number of already existing methods. Each team may participate in either one or both of two sub-tasks: sub-acute ischemic stroke lesion segmentation (SISS) and acute stroke outcome/penumbra estimation (SPES).</p>
 
     <p class="ml"><strong>SISS</strong>: Automatic segmentation of ischemic stroke lesion volumes from multi-spectral MRI sequences acquired in the sub-acute stroke development stage.</p>
-    <p class="ml"><strong>SPES</strong>: Automatic segmentation of acute ischemic stroke lesion volumes from multi-spectral MRI sequences.</p>
+    <p class="ml"><strong>SPES</strong>: Automatic segmentation of acute ischemic stroke lesion volumes from multi-spectral MRI sequences for stroke outcome prediction.</p>
 
     <h2>How it works</h2>
     <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2015 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2015 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will present their method as a poster and, furthermore, a number of selected teams will have the opportunity to hold a small presentation detailing their method. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
@@ -185,6 +188,9 @@
     <p>
 	    To assess stroke treatments, such as thrombolytic therapy or embolectomy, and to discover suitable markers for sound treatment decisions, large clinical studies tracking the stroke development and outcome under controlled conditions are necessary. Automatic stroke segmentation facilitates the quantification of the stroke lesion over time.
 	    The same holds true for quantitative studies aiming to answer the questions 'how an ischemic stroke evolves' and to discover the involved processes.
+    </p>
+    <p>
+        In cases of acute ischaemic stroke, advanced neuroimaging techniques are recommended for a quick, reliable diagnosis and stratification for therapy, which is typically done by assessing the tissue-at-risk. The infarct core (tissue which is already infarcted, or is irrevocably destined to become so) can be identified using diffusion-weighted magnetic resonance imaging. Meanwhile, surrounding tissue that can be potentially rescued (the “penumbra”) is characterized by hypo-perfusion in perfusion-weighted MRI. The imaging is used to assess the ratio of tissue that could potentially be saved, to tissue which is inevitably destined to infarct.  Currently this is performed "by eye" by neuroradiologists, or using off the shelf tools that segment by simple thresholding.  
     </p>
 
     <h2>Research motivation</h2>
@@ -289,57 +295,60 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <p>The data for both sub-tasks, SISS and SPES, are pre-processed in a consistent manner to allow easy application of a method to both problems.</p>
     
     <h2>Image format</h2>
-    <p>Compressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> (NIfTI) format: <strong>*.nii.gz</strong>.</p>
+    <p>Uncompressed <a class="reference external" href="http://nifti.nimh.nih.gov/" target="_blank">Neuroimaging Informatics Technology Initiative</a> (NIfTI) format: <strong>*.nii</strong>.</p>
     <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab), <a class="reference external" href="http://www.itk.org/" target="_blank">ITK</a> (C++))</p>
     
     <h2>Pre-processing</h2>
-    <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
+    <p>All MRI sequences are skull-stripped, re-sampled to an isotropic spacing of \(1^3 mm\) (SISS) resp. \(2^3 mm\) (SPES) and co-registered to the FLAIR (SISS) and T1w contrast (SPES) sequences respectively.</p>
     
     <h2>Data details</h2>
-    
     <div style="overflow:hidden;">
-     <div style="width:48.6%; float:left;">
-
-    <p><strong>SISS</strong></p>
-    <table class="gridtable">
-        <tr>
-	        <th># cases:</th><th>~50 training &amp; ~30 testing</th>
-        </tr>
-        <tr>
-	        <td># centers:</td><td>2</td>
-        </tr>
-        <tr>
-	        <th># expert segmentation sets:</th><th>1 (train), 2 (test)</th>
-        </tr>
-        <tr>
-            <td>MRI sequences:</td>
-            <td><a class="reference external" href="http://en.wikipedia.org/wiki/Fluid-attenuated_inversion_recovery" target="_blank">FLAIR</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93spin_relaxation" target="_blank">T2w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Spin%20Echo" target="_blank">TSE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93lattice_relaxation" target="_blank">T1w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Field%20Echo" target="_blank">TFE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Diffusion_MRI#Diffusion_imaging" target="_blank">DWI with ADC map</a> <span class="note">(preliminary)</span></td>
-        </tr>
-    </table>
-    
+        <div style="width:48.6%; float:left;">
+            <p><strong>SISS</strong></p>
+            <table class="gridtable">
+                <tr>
+	                <th>number of cases:</th><th>28 training<br />28+ testing</th>
+                </tr>
+                <tr>
+	                <td>number of centers:</td><td>1 (train), 2 (test)</td>
+                </tr>
+                <tr>
+	                <th>number of expert segmentation for each case:</th><th>1 (train), 2 (test)</th>
+                </tr>
+                <tr>
+                    <td>MRI sequences:</td>
+                    <td><a class="reference external" href="http://en.wikipedia.org/wiki/Fluid-attenuated_inversion_recovery" target="_blank">FLAIR</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93spin_relaxation" target="_blank">T2w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Spin%20Echo" target="_blank">TSE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Spin%E2%80%93lattice_relaxation" target="_blank">T1w</a> <a class="reference external" href="http://www.mr-tip.com/serv1.php?type=db1&amp;dbs=Turbo%20Field%20Echo" target="_blank">TFE</a>, <a class="reference external" href="http://en.wikipedia.org/wiki/Diffusion_MRI#Diffusion_imaging" target="_blank">DWI with ADC map</a> </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div style="width:48.6%; float:left; margin-left: 2%">
+            <p><strong>SPES</strong></p>
+            <table class="gridtable">
+                <tr>
+	                <th>number of cases:</th><th>30 training<br />20 testing</th>
+                </tr>
+                <tr>
+	                <td>number of centers:</td><td>1</td>
+                </tr>
+                <tr>
+	                <th>number of expert segmentation for each case:</th><th>1</th>
+                </tr>
+                <tr>
+                    <td>MRI sequences:</td>
+                    <td>T1c, T2, DWI, CBF, CBV, TTP, Tmax</td>
+                </tr>
+            </table>
+        </div>
     </div>
     
-    <div style="width:48.6%; float:left; margin-left: 2%">
+    <h2>Data layout</h3>
+    
+    <p><strong>SISS</strong></p>
+    <p>Each case is distributed in its own folder (e.g. <span style="font-style:italic;">01</span>), containing the MRI sequences following the naming convention <span style="font-style:italic;">VSD.Brain.XX.O.MR_&lt;sequence&gt;.&lt;VSDID&gt;.000.nii</span>. For the training cases, the folder will also contain a an expert segmentation image named <span style="font-style:italic;">VSD.Brain.XX.O.OT.&lt;VSDID&gt;.000.nii</span>.</p>
     
     <p><strong>SPES</strong></p>
-    <table class="gridtable">
-        <tr>
-	        <th># cases:</th><th>~30 training &amp; ~20 testing</th>
-        </tr>
-        <tr>
-	        <td># centers:</td><td>1</td>
-        </tr>
-        <tr>
-	        <th># expert segmentation sets:</th><th>1</th>
-        </tr>
-        <tr>
-            <td>MRI sequences:</td>
-            <td>T1c, T2, ADC, CBF, CBV,  MTT, Tmax</td>
-        </tr>
-    </table>
-    
-    </div>
-    </div>
+    <p>Each case is distributed in its own folder (e.g. <span style="font-style:italic;">Nr10</span>), containing the MRI sequences following the naming convention <span style="font-style:italic;">VSD.Brain.XX.O.MR_&lt;sequence&gt;.&lt;VSDID&gt;.000.nii</span>. For the training cases, the folder will also contain three sub-folders (<span style="font-style:italic;">corelabel</span>, <span style="font-style:italic;">penumbralabel</span>, <span style="font-style:italic;">mergedlabels</span>) with the ground-truth labels.</p>
     
     
     
@@ -367,11 +376,11 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 <section id="07"  style="background-color:#f1f1f1;">
 <div class="row content"  style="background-color:#f1f1f1;">
     <h1 class="sec07">Participate</h1>
-    <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/" target="_blank">Virtual Skeleton Database</a>:</p>
+    <p>Data distribution, registration and automatic evaluation will be handled by the <a class="reference external" href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">Virtual Skeleton Database</a>:</p>
     
-    <!--<a href="https://www.virtualskeleton.ch/ISLES/" target="_blank"></a>-->
-    <div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div>
-    <div style="text-align: center;"><span class="note">Will be enabled when the registration opens.</br></br></span></div><!-- TODO: Remove in time -->
+    <a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">
+        <div class="button" style="margin-left:auto; margin-right:auto;"><strong>Participate in ISLES (SISS and/or SPES)</strong></div>
+    </a>
     
     <p>There you will find explanations on how to register, how to download the data and how as well as in which format to upload your results. Furthermore, the evaluation scores obtained by each team will be listed there.</p>
 </div>
@@ -383,8 +392,35 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
     <h1 class="sec08">Evaluation (SISS & SPES)</h1>
     <p>The evaluation comprises three evaluation measures, each of them highlighting different aspects of the segmentation quality. From the computed evaluation scores, the global ranking of each team is established as described below.</p>
     
+    <h2>Segmentation task</h2>
+    <p><strong>SISS</strong></p>
+    <p>
+        Automatic segmentation of the infarcted area in multi-spectral scans of sub-acute ischemic stroke cases. Success will be measured by the evaluation measures detailed below.
+    </p>
+    
+    <p><strong>SPES</strong></p>
+    <p>
+        Automatic segmentation of the infarct core (diffusion restriction) and "penumbra" in multi-spectral scans of acute ischemic stroke cases. Success will be measured by three metrics: Dice coefficient (see below) for the diffusion restriction, Dice coefficient for the "penumbra", and error in the ratio of volume of penumbra to volume of infarct core.
+    </p>
+    
     <h2>Expert segmentations</h2>
-    <p>All expert segmentation were prepared by experienced raters. For SISS, two ground-truth sets will be made available, for SPES one.</p>
+    <p>All expert segmentation were prepared by experienced raters. For SISS, two ground-truth sets will be made available, for SPES one. The segmentation guidelines for the expert raters were as follows:</p>
+    
+    <p><strong>SISS</strong></p>
+    <p>
+        Segmentation was conducted completely manual by an experienced MD. Lesions were classified as sub-acute infarct if pathologic signal was found concomitantly in Flair and DWI images (presence of vasogenic and cytotoxic edema with evidence of swelling due to increased water content). Infarct lesions with signal change due to hemorrhagic transformation were included. Acute infarct lesions (DWI signal for cytotoxic edema only, no FLAIR signal for vasogenic edema) or residual infarct lesions with gliosis and scarring after infarction (no DWI signal for cytotoxic edema, no evidence of swelling) were not included.
+    </p>
+    
+    <p><strong>SPES</strong></p>
+    <p>
+        The label for the perfusion-restriction was segmented by a MD as follows: First, a semi-manual segmentation of the region of interest was done using the currently accepted TMax threshold of 6 seconds (Olivot et al, Stroke 2009; Straka et al., J Magn Reson Imaging 2010; Lansberg et al., Lancet Neurol 2012; Mishra et al., Stroke 2014; Wheeler et al., Stroke 2013) for the production of a preliminary label. Then, morphological operations were applied to the label in order to reduce interpolation artifacts and to correct for unphysiological outliers within the label. Afterwards, the label was hand-corrected again. As a final step, non-brain areas inside the label, such as sulci, ventricles and other CSF collections, were erased from the label. This label represents an underperfused area of potentially salvageable tissue at risk based on the TMax Map (calculated by PMA Assist, segmented in Slicer). TMax is the time it takes for the tissue residue function to reach it's maximum value. TMax is a sensitive parameter reflecting changes in the perfusion state of brain tissue.
+    </p>
+    <p>
+        The label for the diffusion-restriction was segmented by a MD as follows: A semi-manual segmentation of the region of interest was done using the currently accepted ADC threshold of \(600\times 10^-6 mm^2/sec\) (Straka et al., J Magn Reson Imaging 2010, Lansberg et al., Lancet Neurol 2012, Mishra et al., Stroke 2014, Wheeler et al., Stroke 2013). This label represents an area with impairment of energy metabolism and serves as a surrogate to identify the ischemic core of the lesion, which is deemed to undergo infarction.
+    </p>
+    <p>
+        The resulting penumbra (target mismatch = perfusion-restriction label minus diffusion-restriction label) is in line with the MRI profile that suggests salvageable tissue and a favorable response to re-perfusion treatment applied in the multi-center DEFUSE and DEFUSE-II trial (Albers et al., Ann Neurol 2006; Lansberg et al., Lancet Neurol 2012).
+    </p>
     
     <h2>Evaluation measures</h2>
     <p>Three principal evaluation measures are employed to evaluate the quality of a segmentation compared to the reference ground-truth: The <strong>Dice's coefficient</strong> (DC) denotes the volume overlap, the <strong>average symmetric surface distance</strong> (ASSD) the surface fit and the <strong>Hausdorff distance</strong> (HD) the maximum error. Furthermore, <strong>precision</strong> &amp; <strong>recall</strong> are provided to reveal over- respectively under-segmentation, but will not be used in the computation of the team ranks, as they are indirectly reflected by the DC value.</p>
@@ -466,14 +502,14 @@ In case the BrainLeS workshop results in a special issue, some selected methods 
 
     <h2>Contributors</h2>
     <dl id="contributors">
-        <dt>Image data preparation</dt><dd>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</dd>
-        <dt>Web-page design</dt><dd>Friedmann, Laszlo, Institute of Medical Informatics, Universität zu Lübeck</dd>
-        <dt>SISS image data source I</dt><dd>Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>
+        <dt>Image data preparation</dt><dd>Laszlo Friedmann, Institute of Medical Informatics, Universität zu Lübeck</dd>
+        <dt>Web-page design</dt><dd>Laszlo Friedmann, Institute of Medical Informatics, Universität zu Lübeck</dd>
+        <dt>SISS image data source I</dt><dd>Peter Schramm, Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck<br />Christian Erdmann, Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>
         <dt>SISS image data source II</dt><dd>Clinic for Neuroradiology, Technische Universität München</dd>
         <dt>SPES image data source</dt><dd>Institute for Neuroradiology, Universitätsspital Bern</dd>
         <dt>Data download management</dt><dd>Michael Kistler, The Virtual Skeleton Database</dd>
-        <dt>Evaluation management</dt><dd>?, The Virtual Skeleton Database</dd>
-        <dt>Expertise and support</dt><dd>Krämer, Ulrike, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>
+        <dt>Evaluation management</dt><dd>?, The Virtual Skeleton Database</dd>        
+        <dt>Expertise and support</dt><dd>Ulrike Krämer, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck<br />André Kemmling, Institute for Neuroradiology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>
         <dt>Expert segmentations SISS I</dt><dd>Matthias Liebrand, Department of Neurology, Universitätsklinikum Schleswig-Holstein, Lübeck</dd>
         <dt>Expert segmentations SISS II</dt><dd>?, Technische Universität München</dd>
         <dt>Expert segmentations SPES</dt><dd>?, Universitätsspital Bern</dd>        
