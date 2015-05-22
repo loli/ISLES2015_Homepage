@@ -532,6 +532,10 @@ border:5px solid #fff;
 
 }
 
+.passed{
+    background: rgba(0,75,90,.22);
+}
+
 .button:hover{
 border-color:rgb(191,134,20);
   -webkit-transition: all 200ms ease-in;
