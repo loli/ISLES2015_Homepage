@@ -121,7 +121,7 @@
                 <td>Registration opens and distribution of training data</td>
             </tr>
             <tr>
-                <td><li class="button-month">May</li></td>
+                <td><li class="button-month passed">May</li></td>
                 <td>Opening of the evaluation system</td>
             </tr>
             <tr>
@@ -356,24 +356,129 @@ Some selected methods from the BRATS and ISLES challenge will be called upon to 
     <p>Each case is distributed in its own folder (e.g. <span style="font-style:italic;">01</span>), containing the MRI sequences following the naming convention <span style="font-style:italic;">VSD.Brain.XX.O.MR_&lt;sequence&gt;.&lt;VSDID&gt;.000.nii</span>. For the training cases, the folder will also contain a an expert segmentation image named <span style="font-style:italic;">VSD.Brain.XX.O.OT.&lt;VSDID&gt;.000.nii</span>.</p>
     
     <p><strong>SPES</strong></p>
-    <p>Each case is distributed in its own folder (e.g. <span style="font-style:italic;">Nr10</span>), containing the MRI sequences following the naming convention <span style="font-style:italic;">VSD.Brain.XX.O.MR_&lt;sequence&gt;.&lt;VSDID&gt;.000.nii</span>. For the training cases, the folder will also contain three sub-folders (<span style="font-style:italic;">corelabel</span>, <span style="font-style:italic;">penumbralabel</span>, <span style="font-style:italic;">mergedlabels</span>) with the ground-truth labels.</p>
+    <p>Each case is distributed in its own folder (e.g. <span style="font-style:italic;">Nr10</span>), containing the MRI sequences following the naming convention <span style="font-style:italic;">VSD.Brain.XX.O.MR_&lt;sequence&gt;.&lt;VSDID&gt;.000.nii</span>. For the training cases, the folder will also contain three sub-folders (<span style="font-style:italic;">corelabel</span>, <span style="font-style:italic;">penumbralabel</span>, <span style="font-style:italic;">mergedlabels</span>) with the ground-truth labels, but note that only the "penumbra" label will be employed in the challenge.</p>
     
     
     
     <h2>Case characteristics</h2>
     <p><strong>SISS</strong></p>
-    <p>For SISS, cases with sub-acute ischemic stroke lesions have been collected from clinical routine acquisition. The following characteristics reflect the diversity of the included cases: <span class="note">Coming soon.</span></p>
-    <!--
-    <ol class="rounded-list2 green" style="margin-left: 0;">
-        <li>xpmy [a to b] years patient age</li>
-        <li>xpmy [a to b] ml stroke volume</li>
-        <li>embolic strokes</li>
-        <li>single strokes</li>
-        <li>secondary lesions</li>
-        <li>movement artifacts</li>
-        <li>imaging artifacts</li>
-    </ol>
-    -->
+    <p>For SISS, cases with sub-acute ischemic stroke lesions have been collected from clinical routine acquisition. The following characteristics reflect the diversity of the included cases:</p>
+    <!--<ol class="rounded-list2 green" style="margin-left: 0;">
+        <li>lesion count: \(\mu=2.48; [1, 14]\)</li>
+        <li>lesion volume: \(\mu=17.58; [0.001, 346.064]\)</li>
+        <li>multiple strokes (largely embolic): \(n=44\)</li>
+        <li>movement artifacts: <span class="note">Coming soon.</span></li>
+        <li>imaging artifacts: <span class="note">Coming soon.</span></li>        
+        <li>Haemorrhage present: \(n=12\)</li>
+        <li>White matter lesion load: \(\mu=1.34\) <span class="characteristics legend">(0=none, 1=small, 2=medium, 3=large)</span></li>
+        <li>Lesion localization (lobes): \(n_1=11,n_2=24,n_3=42,n_4=17,n_5=2,n_6=6,n_7=0\) <span class="characteristics legend">(1=frontal, 2=temporal, 3=parietal, 4=occipital, 5=midbrain, 6=cerebellum, 7=elsewhere)</span></li>
+        <li>Lesion localization (cortical): \(n_1=36,n_2=49\) <span class="characteristics legend">(0=cortical, 1=subcortical)</span></li>
+        <li>Affected artery: \(n_1=6, n_2=45, n_3=11, n_4=5, n_5=0\) <span class="characteristics legend">(1=ACA, 2=ACM, 3=ACP, 4=BA, 5=other)</span></li>
+        <li>Midline shift observable: \(n_0=51,n_1=5,n_2=0\) <span class="characteristics legend">(0=none, 1=slight, 2=strong)</span></li>
+        <li>Ventricular enhancement observable: \(n_0=38,n_1=15,n_2=3\) <span class="characteristics legend">(0=none, 1=slight, 2=strong)</span></li>
+        <li>Laterality: \(n_1=18,n_2=35,n_3=3\) <span class="characteristics legend">(1=left, 2=right, 3=both)</span></li>
+    </ol>-->
+    <table class="characteristics">
+        <!--<thead>
+            <tr>
+                <th>caracteristic</th>
+                <th>value(s)</th>
+            </tr>
+        </thead>-->
+        <tbody>
+            <tr>
+                <td>Lesion count</td>
+                <td>\(\mu=2.49\)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="legend">\([1, 14]\)</td>
+            </tr>
+            
+            <tr class="second">
+                <td>Lesion volume</td>
+                <td>\(\mu=17.59ml\)</td>
+            </tr>
+            <tr class="second">
+                <td></td>
+                <td class="legend">\([0.001, 346.064]\)</td>
+            </tr>            
+            
+            <tr>
+                <td>Haemorrhage present</td>
+                <td>\(n=12\)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="legend">0=yes, 1=no</td>
+            </tr>
+            
+            <tr class="second">
+                <td>Non-stroke white matter lesion load</td>
+                <td>\(\mu=1.34\)</td>
+            </tr>
+            <tr class="second">
+                <td></td>
+                <td class="legend">0=none, 1=small, 2=medium, 3=large</td>
+            </tr>
+            
+            <tr>
+                <td>Lesion localization (lobes)</td>
+                <td>\(n_1=11,n_2=24,n_3=42,n_4=17,n_5=2,n_6=6\)</td>
+            </tr>
+            <tr >
+                <td></td>
+                <td class="legend">1=frontal, 2=temporal, 3=parietal, 4=occipital, 5=midbrain, 6=cerebellum</td>
+            </tr>
+            
+            <tr class="second">
+                <td>Lesion localization (cortical/subcortical)</td>
+                <td>\(n_1=36,n_2=49\)</td>
+            </tr>
+            <tr class="second">
+                <td></td>
+                <td class="legend">1=cortical, 2=subcortical</td>
+            </tr>
+            
+            <tr>
+                <td>Affected artery</td>
+                <td>\(n_1=6, n_2=45, n_3=11, n_4=5, n_5=0\)</td>
+            </tr>
+            <tr >
+                <td></td>
+                <td class="legend">1=ACA, 2=ACM, 3=ACP, 4=BA, 5=other</td>
+            </tr>
+            
+            <tr class="second">
+                <td>Midline shift observable</td>
+                <td>\(n_0=51,n_1=5,n_2=0\)</td>
+            </tr>
+            <tr class="second">
+                <td></td>
+                <td class="legend">0=none, 1=slight, 2=strong</td>
+            </tr>
+            
+            <tr>
+                <td>Ventricular enhancement observable</td>
+                <td>\(n_0=38,n_1=15,n_2=3\)</td>
+            </tr>
+            <tr >
+                <td></td>
+                <td class="legend">0=none, 1=slight, 2=strong</td>
+            </tr>
+            
+            <tr class="second">
+                <td>Laterality</td>
+                <td>\(n_1=18,n_2=35,n_3=3\)</td>
+            </tr>
+            <tr class="second">
+                <td></td>
+                <td class="legend">1=left, 2=right, 3=both</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <p>All presented statistics are for the 56 case of training and testing together. After the challenge more detailed statistics will be revealed.</p>
     
     <p><strong>SPES</strong></p>
     <p><span class="note">Coming soon.</span></p>
@@ -408,7 +513,8 @@ Some selected methods from the BRATS and ISLES challenge will be called upon to 
     
     <p><strong>SPES</strong></p>
     <p>
-        Automatic segmentation of the infarct core (diffusion restriction) and "penumbra" in multi-spectral scans of acute ischemic stroke cases. Success will be measured by three metrics: Dice coefficient (see below) for the diffusion restriction, Dice coefficient for the "penumbra", and error in the ratio of volume of penumbra to volume of infarct core.
+        Automatic segmentation of the "penumbra" in multi-spectral scans of acute ischemic stroke cases. Success will be measured, as for SISS, by the evaluation measures detailed below.
+Training and testing data are released with an infarct core (diffusion restriction) and a merged label. These are not used in the challenge but can be employed for private evaluations, e.g. of perfusion-diffusion mismatches.
     </p>
     
     <h2>Expert segmentations</h2>
@@ -429,7 +535,25 @@ Some selected methods from the BRATS and ISLES challenge will be called upon to 
     <p>
         The resulting penumbra (target mismatch = perfusion-restriction label minus diffusion-restriction label) is in line with the MRI profile that suggests salvageable tissue and a favorable response to re-perfusion treatment applied in the multi-center DEFUSE and DEFUSE-II trial (Albers et al., Ann Neurol 2006; Lansberg et al., Lancet Neurol 2012).
     </p>
+    <p>
+        Note that only the "penumbra" label will be employed in the challenge.
+    </p>
     
+    <h2>How it works</h2>
+    
+        <h3>Data upload</h3>
+        <p>To upload your training or testing segmentations, navigate to <a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">https://www.virtualskeleton.ch/ISLES/Start2015</a> and select the respective evaluation button, which will lead you to a page where you can 1. Upload, 2. Evaluate and 3. Activate your segmentations. All of these steps are described in more detail on the evaluation page. Please take care to (1) comply with the required naming format  and (2) give your segmentations expressive names to be able to distinguish between the versions. New and improved segmentations can be uploaded at any time, without any restrictions.</p>
+
+        <h3>Training cases</h3>
+        <p>All segmentations selected under "Finished segmentations" will appear in the "Competitive segmentations" listing and and a summary of the results is displayed on the main page (<a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">https://www.virtualskeleton.ch/ISLES/Start2015</a>), which allows you to compare your results against the competitors. Please be aware that we do not provide a ranking for the training results, as they can easily be tuned and are of limited significance. Likewise, do not be intimidated by teams with very good results - you never now how they might have come to pass and how their method will perform on the testing set.</p>
+        <p>Shortly, a new functionality will allow you to download the detailed case-wise results of each team as CSV file to perform your own analyses offline.</p>
+
+        <h3>Testing cases</h3>
+        <p>Uploading the segmentation results for the testing set will work similar as for the training data, only you won't be able to see the evaluation results, nor will there be a summary posted on the main page. Thus, tuning of the results should be prevented. Each teams results and their ranking will be revealed in-place during the MICCAI 2015. Afterwards, the results will furthermore be placed on the challenge websites in a frozen table.</p>
+
+        <h3>After the challenge</h3>
+        <p>After the challenge, both evaluation systems will stay open. The only difference being that the testing cases will equally be evaluated and displayed immediately. Hence, later results are prone to tuning.</p>
+        
     <h2>Evaluation measures</h2>
     <p>Three principal evaluation measures are employed to evaluate the quality of a segmentation compared to the reference ground-truth: The <strong>Dice's coefficient</strong> (DC) denotes the volume overlap, the <strong>average symmetric surface distance</strong> (ASSD) the surface fit and the <strong>Hausdorff distance</strong> (HD) the maximum error. Furthermore, <strong>precision</strong> &amp; <strong>recall</strong> are provided to reveal over- respectively under-segmentation, but will not be used in the computation of the team ranks, as they are indirectly reflected by the DC value.</p>
     

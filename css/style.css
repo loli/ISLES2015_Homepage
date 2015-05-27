@@ -779,3 +779,23 @@ section.active {}
 section{
 	border-top: solid 1px #ddd;
 }
+
+table.characteristics {
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	color:#333333;
+}
+
+table.characteristics .second {
+    background-color: #dedede;
+}
+	
+table.characteristics td {
+    padding: 6px 8px 0px 8px;
+}
+
+table.characteristics td.legend {
+    font-size: 10px;
+    color: #555;
+    padding: 0px 8px 6px 8px;
+}
