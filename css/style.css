@@ -799,3 +799,16 @@ table.characteristics td.legend {
     color: #555;
     padding: 0px 8px 6px 8px;
 }
+
+.small-list {
+    color: #252525;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    
+    
+    list-style-type: circle;
+    margin-left: 15px;
+}
+
