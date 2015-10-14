@@ -812,3 +812,36 @@ table.characteristics td.legend {
     margin-left: 15px;
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+table.frozen th {
+    font-size: smaller;
+}
+
+table.frozen td {
+    font-size: smaller;
+}
+
+table.frozen .institution {
+    font-size: smaller;
+}
+
+p.footnotes {
+    font-size: 5px:
+}
+
+td.logotd {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img.logoimg {
+    width: 20px;
+    height: 20px;
+}
+

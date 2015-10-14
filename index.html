@@ -13,9 +13,10 @@
 
     <title>ISLES: Ischemic Stroke Lesion Segmentation Challenge</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' />
     
 </head>
 <body>
@@ -34,12 +35,12 @@
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </div><a class="reference internal" href=".sec06">
 	
     <nav>
         <ul>
         	<li><a href=".sec01">Overview</a></li>
-        	<li><a href=".sec02">Dates</a></li>
+        	<li><a href=".sec02">Results</a></li>
             <li><a href=".sec03">About</a></li>
             <li><a href=".sec04">Motivation</a></li>
             <li><a href=".sec05">Rules</a></li>
@@ -75,9 +76,7 @@
     <h1 class="sec10">Important Notices</h1>
     <p>
         <ol class="rounded-list green" style="margin-left: 0;">
-            <li><a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">Test data</a> released on VSD.</a>
-            <li>Test data will be released the 14th of September and is due latest until 22nd September 2015, 23:59 CET</li>
-            
+            <li>The final rankings can be found under <a href=".sec02">results</a>. We would like to thank all the participants for their hard work as well as the invited speakers for their interesting talks. The challenge has been a great success!</li>
             <li>We are proud to welcome a total of 20 participating teams</li>
             
             <li>Bern decided to change the SPES evaluation scheme to the “penumbra”-label only</li>
@@ -85,7 +84,7 @@
             
             <li>We are happy to announce that the highest ranking and particularly interesting methods will be invited to contribute to the workshops <a href="http://www.springer.com/lncs" target="_blank">LNCS</a> post-proceedings volume.</li>
             
-            <li>Information: <a href="http://www.brainlesion-workshop.org/#contact" target="_blank">invited speakers</a>, <a class="reference file" href="pdf/20150820_ISLES2015_Proceedings.pdf" target="_blank">proceedings</a>, <a class="reference file" href="pdf/20150915_BrainLes_Program.pdf" target="_blank">on-site program</a></li>
+            <li>Information: <a href="http://www.brainlesion-workshop.org/#contact" target="_blank">invited speakers</a>, <a class="reference file" href="pdf/20150930_ISLES2015_Proceedings.pdf" target="_blank">proceedings</a> (v2015-09-30), <a class="reference file" href="pdf/20150930_BrainLes_Program.pdf" target="_blank">on-site program</a> (v2015-09-30)</li>
             <li>Links: <a href="https://github.com/loli/ISLESevaluation" target="_blank">evaluation code</a>, <a href="https://www.events.tum.de/frontend/index.php?folder_id=158" target="_blank">MICCAI registration</a>
             <li>See <a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank">VSD</a> for registration, training data download, test data download and evaluation system.</li>
         </ol>
@@ -109,9 +108,9 @@
 </section>
 
 <!-- #################################################### DATES #################################################### -->
-<section id="02">
+<section id="10">
 <div class="row content" >
-    <h1 class="sec02">Dates</h1>
+    <h1 class="sec10">Dates</h1>
     <p>All dates are subject to change, please keep an eye on the <a class="reference internal" href=".sec10">important notices</a>.</p>
 	
 	<ul>
@@ -141,16 +140,16 @@
                 <td>Distribution of test data</td>
             </tr>
             <tr>
-                <td><li class="button-month">22 Sept. 2015, 23:59 CET</li></td>
+                <td><li class="button-month passed">22 Sept. 2015, 23:59 CET</li></td>
                 <td>Deadline for submitting test data results</td>
             </tr>
             <tr>
-                <td><li class="button-month">5th October 2015</li></td>
+                <td><li class="button-month passed">5th October 2015</li></td>
                 <td>MICCAI 2015 workshop and award presentation</td>
             </tr>
             <tr>
-                <td><li class="button-month">November</li></td>
-                <td>Compilation of high-impact publication</td>
+                <td><li class="button-month">November<br />&nbsp;</li></td>
+                <td>Compilation of high-impact publication<br />& LNCS post-proceedings invitation</td>
             </tr>
             <tr>
                 <td><li class="button-month">December</li></td>
@@ -158,6 +157,263 @@
             </tr>
         </table>
     </ul>
+</div>
+</section>
+
+<!-- #################################################### RESULTS #################################################### -->
+<section id="02">
+<div class="row content" >
+    <h1 class="sec02">Results</h1>
+    <p>
+        The frozen ranking of the teams who participated at the ISLES workshop, held the 5th of October 2015 at the MICCAI 2015, is presented here and constitutes the final outcome of the challenges. Running results of the continued challenge can be found on the <a href="https://www.virtualskeleton.ch/ISLES/Start2015" target="_blank" class="reference external">VSD data/evaluation web-page</a>. Please note that the results there might vary from the ones presented in this table, as at the VSD page, the ASSD and HD are computed over all but empty segmentation masks, irregardless of the DC score.
+    </p>
+    
+    <h2>SISS</h2>
+    <p>
+        <table id="results-frozen-siss" class="display compact frozen" cellspacing="0" width="100%">
+    
+        <thead>
+            <tr>
+                <th>rank<sup><a href="#fn2ref" class="note">2</a></sup></th>
+                <th>first author (VSD-name) &amp; affiliation</th>
+                <th>cases</th>
+                <th>ASSD<sup><a href="#fn1ref" class="note">1</a></sup></th>
+                <th>DC</th>
+                <th>HD<sup><a href="#fn1ref" class="note">1</a></sup></th>
+                <th></th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td data-order="0754">7.54</td>
+                <td>Liang Chen <em>(chenl2)</em><br /><span class="institution">Biomedical Image Analysis Group, Imperial College London</span></td>
+	            <td>34/36</td>
+	            <td data-order="1171">11.71&plusmn;10.12</td>
+	            <td data-order="004430">0.44&plusmn;0.30</td>
+	            <td data-order="7061">70.61&plusmn;24.59</td>
+	            <td class="logotd"><a class="reference document" href="articles/chenl2.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0766">7.66</td>
+                <td>Francis Dutil <em>(dutif1)</em><br /><span class="institution">Université de Sherbrooke, Sherbrooke</span></td>
+	            <td>27/36</td>
+	            <td data-order="0925">9.25&plusmn;9.79</td>
+	            <td data-order="003532">0.35&plusmn;0.32</td>
+	            <td data-order="4491">44.91&plusmn;32.53</td>
+	            <td class="logotd"><a class="reference document" href="articles/dutif1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0382">3.82</td>
+                <td>Chaolu Feng <em>(fengc1)</em><br /><span class="institution">College of Inform. Science and Eng., Northeastern University, Shenyang</span></td>
+	            <td>32/36</td>
+	            <td data-order="0327">3.27&plusmn;3.62</td>
+	            <td data-order="005530">0.55&plusmn;0.30</td>
+	            <td data-order="1978">19.78&plusmn;15.65</td>
+	            <td class="logotd"><a class="reference document" href="articles/fengc1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0921">9.21</td>
+                <td>Michael Goetz <em>(goetm2)</em><br /><span class="institution">Junior Group Med. Img. Comp., German Cancer Research Center (DKFZ), Heidelberg</span></td>
+	            <td>35/36</td>
+	            <td data-order="1420">14.20&plusmn;10.41</td>
+	            <td data-order="003328">0.33&plusmn;0.28</td>
+	            <td data-order="7795">77.95&plusmn;22.13</td>
+	            <td class="logotd"><a class="reference document" href="articles/goetm2.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0792">7.92</td>
+                <td>Tom Haeck <em>(haect1)</em><br /><span class="institution">ESAT/PSI, Dept. of Electrical Engineering, KU Leuven</span></td>
+	            <td>30/36</td>
+	            <td data-order="1224">12.24&plusmn;13.49</td>
+	            <td data-order="003733">0.37&plusmn;0.33</td>
+	            <td data-order="5865">58.65&plusmn;29.99</td>
+	            <td class="logotd"><a class="reference document" href="articles/haect1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0563">5.63</td>
+                <td>Hanna Halme <em>(halmh1)</em><br /><span class="institution">HUS Medical Imaging Center, University of Helsinki and Helsinki University Hospital</span></td>
+	            <td>31/36</td>
+	            <td data-order="0905">8.05&plusmn;9.57</td>
+	            <td data-order="004732">0.47&plusmn;0.32</td>
+	            <td data-order="4023">40.23&plusmn;33.17</td>
+	            <td class="logotd"><a class="reference document" href="articles/halmh1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0797">7.97</td>
+                <td>Andrew Jesson <em>(jessa3)</em><br /><span class="institution">Centre for Intelligent Machines, McGill University</span></td>
+	            <td>31/36</td>
+	            <td data-order="1104">11.04&plusmn;13.68</td>
+	            <td data-order="003226">0.32&plusmn;0.26</td>
+	            <td data-order="4042">40.42&plusmn;26.98</td>
+	            <td class="logotd"><a class="reference document" href="articles/jessa3.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0325">3.25</td>
+                <td>Konstantinos Kamnitsas <em>(kamnk1)</em><br /><span class="institution">Biomedical Image Analysis Group, Imperial College London</span></td>
+	            <td>34/36</td>
+	            <td data-order="0596">5.96&plusmn;9.38</td>
+	            <td data-order="005931">0.59&plusmn;0.31</td>
+	            <td data-order="3788">37.88&plusmn;30.06</td>
+	            <td class="logotd"><a class="reference document" href="articles/kamnk1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0918">9.18</td>
+                <td>Mahmood Qaiser <em>(mahmq2)</em><br /><span class="institution">Signals and Systems, Chalmers University of Technology, Gothenburg</span></td>
+	            <td>30/36</td>
+	            <td data-order="1000">10.00&plusmn;6.61</td>
+	            <td data-order="003828">0.38&plusmn;0.28</td>
+	            <td data-order="7216">72.16&plusmn;17.32</td>
+	            <td class="logotd"><a class="reference document" href="articles/mahmq2.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0670">6.70</td>
+                <td>Oskar Maier <em>(maieo1)</em><br /><span class="institution">Institute of Medical Informatics, Universität zu Lübeck</span></td>
+	            <td>31/36</td>
+	            <td data-order="1021">10.21&plusmn;9.44</td>
+	            <td data-order="004233">0.42&plusmn;0.33</td>
+	            <td data-order="4917">49.17&plusmn;29.6</td>
+	            <td class="logotd"><a class="reference document" href="articles/maieo1_siss.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0707">7.07</td>
+                <td>John Muschelli <em>(muscj1)</em><br /><span class="institution">Johns Hopkins Bloomberg School of Public Health</span></td>
+	            <td>33/36</td>
+	            <td data-order="1154">11.54&plusmn;11.14</td>
+	            <td data-order="004232">0.42&plusmn;0.32</td>
+	            <td data-order="6243">62.43&plusmn;28.64</td>
+	            <td class="logotd"><a class="reference document" href="articles/muscj1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0640">6.40</td>
+                <td>Syed Reza <em>(rezas1)</em><br /><span class="institution">Vision Lab, Old Dominion University, Norfolk</span></td>
+	            <td>33/36</td>
+	            <td data-order="0624">6.24&plusmn;5.21</td>
+	            <td data-order="004327">0.43&plusmn;0.27</td>
+	            <td data-order="4176">41.76&plusmn;25.11</td>
+	            <td class="logotd"><a class="reference document" href="articles/rezas1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0667">6.67</td>
+                <td>David Robben <em>(robbd1)</em><br /><span class="institution">ESAT/PSI, Dept. of Electrical Engineering, KU Leuven</span></td>
+	            <td>33/36</td>
+	            <td data-order="1127">11.27&plusmn;10.17</td>
+	            <td data-order="004330">0.43&plusmn;0.30</td>
+	            <td data-order="6079">60.79&plusmn;31.14</td>
+	            <td class="logotd"><a class="reference document" href="articles/robbd1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="1099">10.99</td>
+                <td>Ching-Wei Wang <em>(wangc2)</em><br /><span class="institution">Grad. Inst. of Biomed. Eng., National Taiwan University of Science and Technology</span></td>
+	            <td>15/36</td>
+	            <td data-order="0759">7.59&plusmn;6.24</td>
+	            <td data-order="001626">0.16&plusmn;0.26</td>
+	            <td data-order="3854">38.54&plusmn;20.36</td>
+	            <td class="logotd"><a class="reference document" href="articles/wangc2.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+        </tbody>
+        
+        </table>
+    </p>
+    
+    <h2>SPES</h2>
+    <p>
+        <table id="results-frozen-spes" class="display compact frozen" cellspacing="0" width="100%">
+    
+        <thead>
+            <tr>
+                <th>rank<sup><a href="#fn2ref" class="note">2</a></sup></th>
+                <th>first author (VSD-name) &amp; affiliation</th>
+                <th>cases</th>
+                <th>ASSD<sup><a href="#fn1ref" class="note">1</a></sup></th>
+                <th>DC</th>
+                <th></th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td data-order="0202">2.02</td>
+                <td>Richard McKinley <em>(mckir1)</em><br /><span class="institution">Dep. of Diag. and Interventional Neuroradiology, Inselspital, Bern Uni. Hospital</span></td>
+	            <td>20/20</td>
+	            <td data-order="165">1.65&plusmn;1.40</td>
+	            <td data-order="082">0.82&plusmn;0.08</td>
+	            <td class="logotd"><a class="reference document" href="articles/mckir1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0220">2.20</td>
+                <td>Oskar Maier <em>(maieo1)</em><br /><span class="institution">Institute of Medical Informatics, Universität zu Lübeck</span></td>
+	            <td>20/20</td>
+	            <td data-order="136">1.36&plusmn;0.74</td>
+	            <td data-order="081">0.81&plusmn;0.09</td>
+	            <td class="logotd"><a class="reference document" href="articles/maieo1_spes.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0392">3.92</td>
+                <td>David Robben <em>(robbd1)</em><br /><span class="institution">ESAT/PSI, Dept. of Electrical Engineering, KU Leuven</span></td>
+	            <td>20/20</td>
+	            <td data-order="277">2.77&plusmn;3.27</td>
+	            <td data-order="078">0.78&plusmn;0.09</td>
+	            <td class="logotd"><a class="reference document" href="articles/robbd1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0405">4.05</td>
+                <td>Chaolu Feng <em>(fengc1)</em><br /><span class="institution">College of Inform. Science and Eng., Northeastern University, Shenyang</span></td>
+	            <td>20/20</td>
+	            <td data-order="229">2.29&plusmn;1.76</td>
+	            <td data-order="076">0.76&plusmn;0.09</td>
+	            <td class="logotd"><a class="reference document" href="articles/fengc1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0460">4.60</td>
+                <td>Elias Keller <em>(kelle1)</em><br /><span class="institution">Department of Radiology, Medical Physics, University Medical Center Freiburg</span></td>
+	            <td>20/20</td>
+	            <td data-order="244">2.44&plusmn;1.93</td>
+	            <td data-order="073">0.73&plusmn;0.13</td>
+	            <td class="logotd"><a class="reference document" href="articles/kelle1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr> 
+            <tr>
+                <td data-order="0515">5.15</td>
+                <td>Tom Haeck <em>(haect1)</em><br /><span class="institution">ESAT/PSI, Dept. of Electrical Engineering, KU Leuven</span></td>
+	            <td>20/20</td>
+	            <td data-order="400">4.00&plusmn;3.39</td>
+	            <td data-order="067">0.67&plusmn;0.24</td>
+	            <td class="logotd"><a class="reference document" href="articles/haect1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+            <tr>
+                <td data-order="0605">6.05</td>
+                <td>Francis Dutil <em>(dutif1)</em><br /><span class="institution">Université de Sherbrooke, Sherbrooke</span></td>
+	            <td>20/20</td>
+	            <td data-order="553">5.53&plusmn;7.59</td>
+	            <td data-order="054">0.54&plusmn;0.26</td>
+	            <td class="logotd"><a class="reference document" href="articles/dutif1.pdf" target="_blank"><img class="logoimg" src="imgs/pdf.png" /></a></td>
+            </tr>
+        </tbody>
+        </table>
+    </p>
+        
+    <p class="footnotes">
+        <a name="fn1ref" id="fn1ref"><sup>1</sup></a>Computed excluding the failed cases (where DC=0, see <em>cases</em>-column), therefore not suitable for a direct comparison of methods<br />
+        <a name="fn2ref" id="fn2ref"><sup>2</sup></a>Relative rank, computed as described below in the <a class="reference internal" href=".sec08">evaluation section</a>
+    </p>
+    
+    <p>
+        Each row is linked to a method description as PDF file. The complete proceedings can be found <a class="reference file" href="pdf/20150930_ISLES2015_Proceedings.pdf" target="_blank">here</a> (v2015-09-30)
+    </p>
+    
+    <h2>Conclusion</h2>
+    <p>
+        The BrainLes workshop took place at the 5th of October 2015. In front of a full room of roughly one hundred listeners, the first three of the invited speakers commenced with their lectures: Maria Rocca highlighted the latest developments in Multiple Sclerosis treatment, Arya Nabavi helped improving our understanding of stroke from a medical perspective and Guido Gerig talked about imaging of Trauma Brain Injuries. Then the first batch of contributed papers were presented.<br />
+        After a short break, Simon Warfield entertained us with an overview over his long line of work on segmentation fusion, followed by the BRATS challenge.
+    </p>
+    <p>
+        Afterwards, it was time for the ISLES challenge. First, Bianca de Haan promoted the neuropsychologic perspective on stroke lesion segmentation and detailed the requirements arising from the field, which differ from the medical point of view. Then we gave a short introduction of the challenges' tasks and announced the winners (Congratulations!). These then had the opportunity to present their methods in form of a short presentation. Finally, a first interpretation of the ISLES results was given.<br />
+        In the afternoon, the workshop continued with a talk of Roland Wiest on Advanced Neuroimaging for Glimo. After a few more participating works, a lively discussion arose, sprinkled with much welcome recommendations for any future challenge.
+    </p>
+    <p>
+        We would like to thank the participants for their interest and hard work, the invited speakers for their valuable contributions and the audience for their numerous appearance and the lively discussions.
+        It has been a great experience with all of you!
+    </p>
 </div>
 </section>
 
@@ -667,6 +923,12 @@ Training and testing data are released with an infarct core (diffusion restricti
 
         <h3>Shared ranks</h3>
         <p>Multiple teams can share a single rank. In such a cases, the following rank will be left empty.</p>
+        
+        <h3>SISS specifics</h3>
+        <p>Since we provide two ground-truth segmentations for the testing data set, a rank is computed for both and then average over both of them to obtain the final rank.</p>
+        
+        <h3>SPES specifics</h3>
+        <p>Since the ground-truth of SPES hold missing pixels, we decided to exclude the HD from the computation of the final ranking, as this measure would not fulfill its purpose of denoting the outliers.</p>
 
 </div>
 </section>
@@ -736,17 +998,47 @@ Training and testing data are released with an infarct core (diffusion restricti
 
 
 <!-- JavaScript embedding section -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnifier.js">
-    /***********************************************
-    * jQuery Image Magnify- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-    * This notice MUST stay intact for legal use
-    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
-    ***********************************************/
-</script>
+
+<!--<script type="text/javascript" src="js/jquery.magnifier.js">
+/***********************************************
+* jQuery Image Magnify- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+</script>-->
+
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" class="init">
+
+
+$(document).ready(function() {
+	$('#results-frozen-siss').DataTable( {
+	    "order":    [[ 0, "asc" ]],
+    	"paging":   false,
+    	"info":     false,
+    	"searching":false
+    } );    	
+} );
+
+
+$(document).ready(function() {
+	$('#results-frozen-spes').DataTable( {
+	    "order":    [[ 0, "asc" ]],
+    	"paging":   false,
+    	"info":     false,
+    	"searching":false
+    } );    	
+} );
+
+
+	</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
