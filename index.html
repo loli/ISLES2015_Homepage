@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" />
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' />
+    <link rel='stylesheet' type='text/css' href="css/lightbox.css" />
     
 </head>
 <body>
@@ -401,10 +402,33 @@
         Each row is linked to a method description as PDF file. The complete proceedings can be found <a class="reference file" href="pdf/20150930_ISLES2015_Proceedings.pdf" target="_blank">here</a> (v2015-09-30)
     </p>
     
+    <h2>Photos</h2>
+    <div class="caption-short">
+        <a href="photos/01.JPG" data-lightbox="ISLES2015" data-title="Welcome to MICCAI 2015 in Munich"><img src="photos/01.JPG" class="teaser" /></a>
+        <a href="photos/02.JPG" data-lightbox="ISLES2015" data-title="Invited speaker: Maria Rocca talking about Gray matter damage and dysfunction in MS"><img src="photos/02.JPG" class="teaser" /></a>
+        <a href="photos/03.JPG" data-lightbox="ISLES2015" data-title="Invited speaker: Arya Nabavi refreshing our stroke background"><img src="photos/03.JPG" class="teaser" /></a>
+        <a href="photos/04.JPG" data-lightbox="ISLES2015" data-title="Invited speaker: James Fishbaught holding Giro Gerigs talk about Medical Imaging of Trauma Brain Injuries"></a>
+        <a href="photos/05.JPG" data-lightbox="ISLES2015" data-title="Invited speaker: Simon Warfiled on Label Fusion"></a>
+        <a href="photos/06.JPG" data-lightbox="ISLES2015" data-title="The numerous audience..."></a>
+        <a href="photos/07.JPG" data-lightbox="ISLES2015" data-title="...who held to us throughout the whole day"></a>
+        <a href="photos/08.JPG" data-lightbox="ISLES2015" data-title="Presentation of the BRATS Challenge by Björn Menze"></a>
+        <a href="photos/09.JPG" data-lightbox="ISLES2015" data-title="And the BRATS winners!"></a>
+        <a href="photos/10.JPG" data-lightbox="ISLES2015" data-title="Oskar Maier presenting the ISLES tasks"></a>
+        <a href="photos/11.JPG" data-lightbox="ISLES2015" data-title="First prize - a blue brain-trophy."></a>
+        <a href="photos/12.JPG" data-lightbox="ISLES2015" data-title="The ISLES winners united!"></a>
+        <a href="photos/13.JPG" data-lightbox="ISLES2015" data-title="Gala Dinner with a slight traditional Bavarian touch (Please be assured that Germans do not walk around like this in their daily lives)."></a>
+        <a href="photos/14.JPG" data-lightbox="ISLES2015" data-title="The MICCAI crowed liked it."></a>
+        <a href="photos/15.JPG" data-lightbox="ISLES2015" data-title="Munich, city center."></a>
+        <a href="photos/16.JPG" data-lightbox="ISLES2015" data-title="Impressions from Munich I"></a>
+        <a href="photos/17.JPG" data-lightbox="ISLES2015" data-title="Impressions from Munich II"></a>
+        <a href="photos/18.JPG" data-lightbox="ISLES2015" data-title="Impressions from Munich III"></a><br />
+        <strong>Fig.:</strong> Click on any to start slide-show.
+    </div>
+    
     <h2>Conclusion</h2>
     <p>
-        The BrainLes workshop took place at the 5th of October 2015. In front of a full room of roughly one hundred listeners, the first three of the invited speakers commenced with their lectures: Maria Rocca highlighted the latest developments in Multiple Sclerosis treatment, Arya Nabavi helped improving our understanding of stroke from a medical perspective and Guido Gerig talked about imaging of Trauma Brain Injuries. Then the first batch of contributed papers were presented.<br />
-        After a short break, Simon Warfield entertained us with an overview over his long line of work on segmentation fusion, followed by the BRATS challenge.
+        The BrainLes workshop took place at the 5th of October 2015. In front of a full room of roughly one hundred listeners, the first three of the invited speakers commenced with their lectures: Maria Rocca highlighted the latest developments in Multiple Sclerosis treatment, Arya Nabavi helped improving our understanding of stroke from a medical perspective and James Fishbaught (for Guido Gerig) talked about imaging of Trauma Brain Injuries. Then the first batch of contributed papers were presented.<br />
+        After a short break, Simon Warfield entertained us with an overview over his long line of work on label fusion, followed by the BRATS challenge.
     </p>
     <p>
         Afterwards, it was time for the ISLES challenge. First, Bianca de Haan promoted the neuropsychologic perspective on stroke lesion segmentation and detailed the requirements arising from the field, which differ from the medical point of view. Then we gave a short introduction of the challenges' tasks and announced the winners (Congratulations!). These then had the opportunity to present their methods in form of a short presentation. Finally, a first interpretation of the ISLES results was given.<br />
@@ -908,9 +932,9 @@ Training and testing data are released with an infarct core (diffusion restricti
     <p>This scheme is furthermore detailed in the following figure:</p>
 
     <div class="caption-short">
-        <img class="magnify classhover" alt="ranking_schema.png" src="imgs/ranking_schema_final.png" style="width: 100%; margin: 8px 0;">
+        <a href="imgs/ranking_schema_final.png" data-lightbox="ranking-schema" data-title="ISLES 2015 ranking schema"><img src="imgs/ranking_schema_final.png" alt="ranking_schema.png" style="width: 100%; margin: 8px 0;" /></a>
 	    <strong>Fig.:</strong> Overview of the ranking schema, click to enlarge.
-    </div>  	
+    </div>
 
         <h3>Very easy or difficult cases</h3>
         <p>By not averaging the actual evaluation measures, but rather the ranks in each, the system is not affected by very difficult or easy cases: If all methods return low results on one case, even a small difference between them will still count in the ranking. Thus, the overall impression of a method will not be distorted.</p>
@@ -1001,9 +1025,9 @@ Training and testing data are released with an infarct core (diffusion restricti
 <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" language="javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" language="javascript" src="js/index.js"></script>
+<script type="text/javascript" language="javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <!--<script type="text/javascript" src="js/jquery.magnifier.js">
 /***********************************************
@@ -1014,7 +1038,7 @@ Training and testing data are released with an infarct core (diffusion restricti
 </script>-->
 
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" class="init">
+	<script type="text/javascript" language="javascript" class="init">
 
 
 $(document).ready(function() {
