@@ -1,3 +1,5 @@
-ISLES 2015 Homepage
--------------------
+ISLES Homepages
+---------------
+
+Use the branches for actual yearly versions.
 
