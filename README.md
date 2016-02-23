@@ -1,4 +1,3 @@
-hp_challenge
-============
+ISLES 2015 Homepage
+-------------------
 
-Code + text of the homepage
