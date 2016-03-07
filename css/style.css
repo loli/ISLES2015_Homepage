@@ -594,8 +594,8 @@ border:2px solid white;
 .button-big{
 
 width:auto;
-max-width: 200px;
-min-height: 180px;
+max-width: 300px;
+min-height: 100px;
 text-align: center;
 height:auto;
 padding:25px;
