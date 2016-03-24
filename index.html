@@ -73,9 +73,8 @@
 
 <!-- #################################################### IMPORTANT NOTICES #################################################### -->
 <section>
-    <div class="row content" style="background-color:#f1f1f1; padding-bottom: 10px;"> 
+    <div class="row content" style="padding-bottom: 0px;"> 
         <h3>Looking for ISLES 2015? <a class="reference external" href="http://www.isles-challenge.org/ISLES2015/" target="_blank">Click here</a>.</h3><br />
-        <h3 style="color: #ff0000;">This page is still under construction and all content subject to change.</h3>
     </div>
 </section>
 
@@ -101,7 +100,16 @@
 <div class="row content"  style="background-color:#f1f1f1;"> 
     <h1 class="sec01">Overview</h1>
     
-    <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES) 2016</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2016.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) 2016 (October 17-21st). We aim to provide a platform for a fair and direct comparison of methods for ischemic stroke lesion segmentation from multi-spectral MRI images. A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available for the <strong>prediction of stroke lesion outcome from acute MRI scans</strong>.</p>
+    <p>Welcome to <strong>Ischemic Stroke Lesion Segmentation (ISLES) 2016</strong>, a <a class="reference external" href="http://grand-challenge.org/" target="_blank">medical image segmentation challenge</a> at the <a class="reference external" href="http://www.miccai2016.org/" target="_blank">International Conference on Medical Image Computing and Computer Assisted Intervention</a> (MICCAI) 2016 (October 17-21st).</p>
+    
+    <p><img style="width: 800px;" src="imgs/Task_wbadges.png" /></p>
+    
+    <p>ISLES 2016 provides a segmentation and a regression task:</p>
+    
+    <p class="ml"><strong>Task I:</strong> Lesion outcome prediction</p>
+    <p class="ml"><strong>Task II:</strong> Clinical outcome prediction</p>
+    
+    <p>A public dataset of diverse ischemic stroke cases and a suitable automatic evaluation procedure will be made available. The provided data allows the participating methods to combine image and clinical information in any combination to achieve the tasks' goals.</p>
     
     <p>On this page, you can find details on how the challenge works in the <a class="reference internal" href=".sec03">about</a> section, the clinical and research <a class="reference internal" href=".sec04">motivation</a> behind it, the <a class="reference internal" href=".sec05">rules</a> of how to participate, the <a class="reference internal" href=".sec06">data</a> description and the <a class="reference internal" href=".sec08">evaluation</a> scheme.</p>
 </div>
@@ -177,17 +185,17 @@
     <p>Medical image processing comprises a large number of tasks, for which new methods are regularly proposed. But, more often than desirable, it is difficult to compare their fitness, as the reported results are obtained on private datasets. Challenges aim to overcome these shortcomings by providing (1) a public dataset that reflects the diversity of the problem and (2) a platform for a fair and direct comparison of methods with suitable evaluation measures. Thus, the scientific progress is promoted (see <a class="reference external" href="http://grand-challenge.org/Why_Challenges/" target="_blank">grand-challenge.org</a> for a detailed rationale behind challenges).</p>
 
     <h2>Past challenges</h2>
-    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the MICCAI and <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>.</p>
+    <p>During the recent years, the need for challenges has been emphasized in the medical image processing community. Especially in the scope of the MICCAI and <a class="reference external" href="http://biomedicalimaging.org" target="_blank">International Symposium on Biomedical Imaging</a> (ISBI) conferences, a number of challenges have been already successfully organized. All of these are collected centrally at <a class="reference external" href="http://grand-challenge.org/" target="_blank">grand-challenges.org</a>. Last year, we organized with <a class="reference external" href="http://www.isles-challenge.org/ISLES2015/" target="_blank">ISLES 2015</a> a successful ischemic stoke lesion segmentation challenges with a similar task.</p>
 
     <h2 class="sec12">The ISLES 2016 challenge</h2>
     <p>
-    The ISLES 2016 challenge treats the challenging problem of <strong>stroke lesion outcome prediction from acute MRI scans</strong>.
+    The ISLES 2016 challenge treats the challenging problem of <strong>stroke lesion/clinical outcome prediction from acute MRI scans</strong>.
 
-    To this end, we will provide the perfusion, diffusion, and anatomical scans of a large number of acute stroke cases, which are grouped into malignant vs. non-malignant and the latter furthermore into revasculated vs. non-revasculated. Associated ground truth is the final lesion volume as manually segmented in 3 to 9 month follow-up scans.
+    To this end, we will provide acute MRI scans of a large number of acute stroke cases and associated clinical parameters. The associated ground truth is the final lesion volume (Task I) as manually segmented in 3 to 9 month follow-up scans, and the clinical mRM score (Task II) denoting the degree of disability.
     </p>
 
     <h2>How it works</h2>
-    <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2016 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2016 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will have the opportunity to present their method as a poster and, furthermore, a number of selected teams will be asked to hold a small presentation detailing their method. A number of high ranking and particularly interesting approaches will be invited to contribute to the workshops <a href="http://www.springer.com/lncs" target="_blank">LNCS</a> post-proceedings volume. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
+    <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2016 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images, Task I) / their mRM score predictions (Task II) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2016 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will have the opportunity to present their method as a poster and, furthermore, a number of selected teams will be asked to hold a small presentation detailing their method. A number of high ranking and particularly interesting approaches will be invited to contribute to the workshops <a href="http://www.springer.com/lncs" target="_blank">LNCS</a> post-proceedings volume. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
 </div>
 </section>
 
@@ -195,19 +203,21 @@
 <section id="04">
 <div class="row content">
 	<h1 class="sec04">Motivation</h1>
-	<p>
-		
-	</p>
-
-    <h2>Clinical motivation</h2>
-    <p>
-	    
-    </p>
 
     <h2>Research motivation</h2>
     <p>
-	    
+	    Yet-to-come.
     </p>
+    
+    <h2>Clinical motivation</h2>
+    <p>
+	    Yet-to-come.
+	    
+	    <img style="width: 800px;" src="imgs/timeline.png" />
+
+        <p>The typical stroke treatment procedure involves the acquisition of brain images at some time-since-stroke (TSS). Depending on the these and other factors a treatment decision is made and an intervention takes place after a time-to-treatment (TTT). The success of this intervention is assessed via the standardized TICI score. After the effects stabilized, the final clinical outcome is determined with the mRM and the final lesion outcome by brain imaging.</p>
+    </p>
+
 </div>
 </section>
 
@@ -220,14 +230,14 @@
     <p>Each team wishing to participate in the ISLES challenge is required to:</p>
     <ol class="rounded-list green" style="margin-left: 0;">
         <li>Register at the data distribution and evaluation platform (see <a class="reference internal" href=".sec07">participate</a> for more details).</li>
-        <li>Upload the test data segmentation results before the deadline (see <a class="reference internal" href=".sec02">dates</a>).</li>
+        <li>Upload the test data results before the deadline (see <a class="reference internal" href=".sec02">dates</a>).</li>
         <li>Submit a short paper describing their method and their results on the training data set (see <a class="reference internal" href=".sec11">short paper</a>).</li>
         <li>Register to the associated MICCAI 2016 workshop and pay the attendance fee (possible right up until the day of the challenge).</li>
         <li>Be present at the workshop with at least one team member.</li>
     </ol>
 
     <h2>Which methods are called for?</h2>
-    <p>All types of automatic stroke lesion segmentation methods are welcome. We specifically do not restrict the participation to new, innovative and unpublished methods, but invite research groups from all over the world to enter their existing method in the competition. Semi-automatic methods are eligible for participation and will appear in the ranking, but out of competition, as it is impossible to rate the influence of the manual steps in a fair manner.</p>
+    <p>All types of automatic methods producing the desired end-points are welcome. We specifically do not restrict the participation to new, innovative and unpublished methods, but invite research groups from all over the world to enter their existing method in the competition. Semi-automatic methods are eligible for participation and will appear in the ranking, but out of competition, as it is impossible to rate the influence of the manual steps in a fair manner.</p>
 
     <h2>Organizational structure</h2>
     <p>ISLES is organized as part of a larger, four-part, full-day workshop at the MICCAI 2016 with the following organizational structure:</p>
@@ -273,7 +283,7 @@
     <p>All challenges and the workshop treat brain injury. Double contributions are highly welcome and only one registration at the MICCAI 2016 workshop is required.</p>
     
     <h2>Usage of ISLES data for the Brain Lesion Segmentation (BrainLeS) workshop</h2>
-    <p>Participants are free to use the training data from ISLES to evaluate methods submitted to BrainLeS, but are then encouraged to also participate in the challenge too. In such case, they are not required to submit the short-paper to ISLES, instead their (accepted) BrainLeS manuscript will suffice, as long as it states the results obtained on the training set.</p>
+    <p>Participants are free to use the training data from ISLES to evaluate methods submitted to BrainLeS, but are encouraged to also participate in the challenge too. In such case, they are not required to submit the short-paper to ISLES, instead their (accepted) BrainLeS manuscript will suffice, as long as it states the results obtained on the training set.</p>
 
     <h2 class="sec11">Short paper</h2>
     <p>ISLES requires the participating teams to submit a short-paper of 4 pages in <a class="reference external" href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0" target="_blank">LNCS</a> format, which will be reviewed by the organizers. The text will be distributed among the MICCAI 2016 attendees on the MICCAI 2016 USB drive and uploaded to the challenge result web-page. See <a class="reference internal" href=".sec02">dates</a> for the associated deadlines.</p>
@@ -315,7 +325,7 @@
     <ul class="small-list">
         <li>some selected methods will be invited to give an oral presentation</li>
         <li>selected teams will be announced directly after the evaluation round</a>
-        <li>X+Y scheme: X minutes presentation plus two Y discussion</li>
+        <li>X+Y scheme: X minutes presentation plus Y minutes discussion</li>
         <li>a poster presentation is still possible</a>
     </ul>
     
@@ -342,17 +352,111 @@
     <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab), <a class="reference external" href="http://www.itk.org/" target="_blank">ITK</a> (C++))</p>
     
     <h2>Pre-processing</h2>
-    <p>All MRI sequences are skull-stripped. No other pre-processing, such as re-sampling or co-registration is performed.</p>
+    <p>All MRI sequences are skull-stripped. No other pre-processing, such as re-sampling or co-registration is performed. This allows each participant to employ their favorite algorithms.</p>
     
     <h2>Data details</h2>
-    <p>yet-to-come</p>
+    <p>For ISLES 2016, roughly 40 training and 50 testing cases will be made public. More details will be provided soon.</p>
     
-    <h2>Data layout</h3>
-    <p>yet-to-come</p>
+    <h2>Clinical parameter details</h2>
     
-    <h2>Case characteristics</h2>
-    <p>yet-to-come</p>
+    <h3>Thrombolysis in Cerebral Infarction (TICI) scale</h3>
+    <p>The TICI scale, originally proposed by <a class="reference external" href="http://stroke.ahajournals.org/content/34/8/e109" target="_blank">Higashida et al. (2003)</a>, provides a standardized method to evaluate intracranial perfusion assessed in cerebral angiography. Here, it is used to assess the achieve re-perfusion after a flow-restoration intervention such as thrombectomy.</p>
     
+    <table class="gridtable">
+        <tbody>
+            <tr>
+                <td style="width: 15%;">Grade 0</td>
+                <td>No Perfusion. No antegrade flow beyond the point of occlusion.</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dedede;">Grade 1</td>
+                <td style="background-color: #dedede;">Penetration With Minimal Perfusion. The contrast material passes beyond the area of obstruction but fails to opacify the entire
+cerebral bed distal to the obstruction for the duration of the angiographic run.</td>
+            </tr>          
+            <tr>
+                <td>Grade 2</td>
+                <td>Partial Perfusion. The contrast material passes beyond the obstruction and opacifies the arterial bed distal to the obstruction.
+However, the rate of entry of contrast into the vessel distal to the obstruction and/or its rate of clearance from the distal bed are
+perceptibly slower than its entry into and/or clearance from comparable areas not perfused by the previously occluded vessel, eg,
+the opposite cerebral artery or the arterial bed proximal to the obstruction.</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 20px;">Grade 2a</td>
+                <td>Only partial filling (2/3) of the entire vascular territory is visualized.</td>
+            </tr>          
+            <tr>
+                <td style="padding-left: 20px;">Grade 2b</td>
+                <td>Complete filling of all of the expected vascular territory is visualized, but the filling is slower than normal.</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dedede;">Grade 3</td>
+                <td style="background-color: #dedede;">Complete Perfusion. Antegrade flow into the bed distal to the obstruction occurs as promptly as into the obstruction
+and clearance of contrast material from the involved bed is as rapid as from an uninvolved other bed of the same vessel or the opposite cerebral artery.</td>
+            </tr>
+        </tbody>
+    </table>    
+    
+    <h3>Modified Rankin Scale (mRS)</h3>
+    <p>The 90 days mRS is a standardized scale to assess the degree of disability 90 days after a stroke incidence and can be considered as the clinical outcome (<a class="reference external" href="http://stroke.ahajournals.org/content/19/5/604" target="_blank">van Swieten et al. (1988)</a>, see <a class="reference external" href="http://www.modifiedrankin.com" target="_blank">here</a> for an online version of the test). The mRS score serves as endpoint for Task II.</p>
+    
+    <table class="gridtable">
+        <tbody>
+            <tr>
+                <td style="width: 15%;">Grade 0</td>
+                <td>No Symptoms at all.</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dedede;">Grade 1</td>
+                <td style="background-color: #dedede;">No significant disability despite symptoms; able to carry out all usual duties and activities.</td>
+            </tr>          
+            <tr>
+                <td>Grade 2</td>
+                <td>Slight disability; unable to carry out all previous activities, but able to look after own affairs without assistance.</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dedede;">Grade 3</td>
+                <td style="background-color: #dedede;">Moderate disability; requiring some help, but able to walk without assistance.</td>
+            </tr>
+            <tr>
+                <td>Grade 4</td>
+                <td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dedede;">Grade 5</td>
+                <td style="background-color: #dedede;">Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td>
+            </tr>
+            <tr>
+                <td>Grade 6</td>
+                <td>Dead.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>Time-since-stroke (TSS)</h3>
+    <p>TSS is an important factor as only a fast re-establishing of the cerebral perfusion can lead to benefits for the patient. The less time passed since stroke onset, the more likely a re-perfusion can salvage brain tissue.</p>
+    
+    <h3>Time-to-treatment (TTT)</h3>
+    <p>TTT denotes the time passed between imaging the patient and the re-perfusion treatment. Similar to the TSS, its value determines the amount of salvageable brain tissue.
+    </p>
+    
+    <h2>Acute imaging details</h2>
+    <p>For this challenge, MRI sequences recorded at the time of admission are as detailed below. For more information on the sequences, see e.g. <a class="reference external" href="http://mriquestions.com" target="_blank">http://mriquestions.com</a>.</p>
+    
+    <h3>DWI trace images at b=0 and b=1000</h3>
+    <p>The perfusion restriction caused by stroke shows up early in DWI images as hyperintense areas.</p>
+    
+    <h3>ADC map</h3>
+    <p>Constructed from the DWI images, the ADC map show the underperfused area as hypointense region. Compared to the DWI trace images, the ADC map does not suffer from confounding T2 shine-through effects.</p>
+    
+    <h3>Raw perfusion data</h3>
+    <p>Perfusion imaging (here: dynamic susceptibility imaging) denotes the perfusion of brain tissue with blood over time. The raw perfusion data are multiple 3D scans performed at equal time-intervals combined into a 4D volume.</p>
+    
+    <h3>Perfusion maps (Tmax, TTP, CBV, CBF)</h3>
+    <p>For clinical assessment various maps can be computed from the raw perfusion data, each of which denotes different aspects of the measured brain perfusion. For ISLES 2016, a number of maps computed via block decomposition using the <a class="reference external" href="http://www.olea-medical.com" target="_blank">Olea Sphere</a> software are provided.</p>
+    
+    <h2>Follow-up stroke imaging</h2>
+    <p>To assess the final lesion outcome, an anatomical sequence is acquired when the stroke lesion stabilized. The manually segmented lesion in this scan constitutes the final lesion outcome and serves as end-point for Task I.</p>
+  
 </div>
 </section>
     
@@ -374,95 +478,16 @@
 <section id="08">
 <div class="row content">
     <h1 class="sec08">Evaluation</h1>
-    <p>The evaluation comprises three evaluation measures, each of them highlighting different aspects of the segmentation quality. From the computed evaluation scores, the global ranking of each team is established as described below.</p>
     
-    <h2>Segmentation task</h2>
+    <h2>Task I: Lesion outcome</h2>
+    <p>
+        The evaluation comprises three evaluation measures, each of them highlighting different aspects of the segmentation quality. From the computed evaluation scores, the global ranking of each team is established as described on <a class="reference external" href="http://www.isles-challenge.org/ISLES2015" target="_blank">ISLES 2015</a> for the SISS task. See there under <strong>Evaluation</strong> for more details.
+    </p>
     
-    <h2>Expert segmentations</h2>
-    
-    <h2>How it works</h2>
-    
-        <h3>Data upload</h3>
-        <p>To upload your training or testing segmentations, navigate to <a href="https://www.virtualskeleton.ch/ISLES/Start2016" target="_blank">https://www.virtualskeleton.ch/ISLES/Start2016</a> and select the respective evaluation button, which will lead you to a page where you can 1. Upload, 2. Evaluate and 3. Activate your segmentations. All of these steps are described in more detail on the evaluation page. Please take care to (1) comply with the required naming format  and (2) give your segmentations expressive names to be able to distinguish between the versions. New and improved segmentations can be uploaded at any time, without any restrictions.</p>
-
-        <h3>Training cases</h3>
-        <p>All segmentations selected under "Finished segmentations" will appear in the "Competitive segmentations" listing and and a summary of the results is displayed on the main page (<a href="https://www.virtualskeleton.ch/ISLES/Start2016" target="_blank">https://www.virtualskeleton.ch/ISLES/Start2016</a>), which allows you to compare your results against the competitors. Please be aware that we do not provide a ranking for the training results, as they can easily be tuned and are of limited significance. Likewise, do not be intimidated by teams with very good results - you never now how they might have come to pass and how their method will perform on the testing set.</p>
-
-        <h3>Testing cases</h3>
-        <p>Uploading the segmentation results for the testing set will work similar as for the training data, only you won't be able to see the evaluation results, nor will there be a summary posted on the main page. Thus, tuning of the results should be prevented. Each teams results and their ranking will be revealed in-place during the MICCAI 2016. Afterwards, the results will furthermore be placed on the challenge websites in a frozen table.</p>
-
-        <h3>After the challenge</h3>
-        <p>After the challenge, both evaluation systems will stay open. The only difference being that the testing cases will equally be evaluated and displayed immediately. Hence, later results are prone to tuning.</p>
-        
-    <h2>Evaluation measures</h2>
-    <p>Three principal evaluation measures are employed to evaluate the quality of a segmentation compared to the reference ground-truth: The <strong>Dice's coefficient</strong> (DC) denotes the volume overlap, the <strong>average symmetric surface distance</strong> (ASSD) the surface fit and the <strong>Hausdorff distance</strong> (HD) the maximum error. Furthermore, <strong>precision</strong> &amp; <strong>recall</strong> are provided to reveal over- respectively under-segmentation, but will not be used in the computation of the team ranks, as they are indirectly reflected by the DC value.</p>
-    
-        <h3>Dice's coefficient (DC)</h3>
-        <p>The \(DC\) measures the similarity between two datasets. Considering two sets of volume voxels \(A\) and \(B\), the \(DC\) value is given as:</p>
-	    <p>$$DC=\dfrac{2|A\cap B|}{|A|+|B|}$$</p>
-        <p>A value of 0 indicates no overlap, a value of 1 perfect similarity. During interpretation, it should be kept in mind that the \(DC\) is known to yield higher values for larger volumes i.e. a \(DC\) of 0.9 for lung segmentation is considered average, as is a \(DC\) of 0.6 for multiple sclerosis lesions.</p>
-        
-        <div class="caption-short">
-            <img src="imgs/dice_pic_comp.png" alt="Dice's coefficient" style="width: 100%; margin: 8px 0;">
-	        <strong>Fig.:</strong> The two sets \(A\), \(B\) and their union.
-        </div>  
-	
-        <p>Note that the \(DC\) is the same as the <a class="reference external" href="http://en.wikipedia.org/wiki/F1_score" target="_blank">F1-score</a>, monotonic in <a class="reference external" href="http://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard similarity</a> and the harmonic mean of precision &amp; recall. See <a class="reference external" href="http://brenocon.com/blog/2012/04/f-scores-dice-and-jaccard-set-similarity/" target="_blank">here</a> for more details.</p>
-
-        <h3>Average symmetric surface distance (ASSD)</h3>
-        <p>The \(ASSD\) denotes the average distance between the volumes surface points averaged over both directions. Considering two sets of surface points \(A\) and \(B\), the average surface distance (\(ASD\)) is given as:</p>
-        <p>$$ASD(A,B) = \frac{\sum_{a\in A}min_{b\in B}d(a,b)}{|A|}$$</p>
-        <p>with \(d(a,b)\) being the Euclidean distance between the points \(a\) and \(b\). Since \(ASD(A,B)\neq ASD(B,A)\), the \(ASSD\) is then given as:</p>
-	    <p>$$ASSD(A,B) = \frac{ASD(A,B)+ASD(B,A)}{2}$$</p>
-        <p>It is given in \(mm\), the lower the better, and works equally well for large and small objects.</p>
-        
-        <h3>Hausdorff distance (HD)</h3>
-        <p>The \(HD\) denotes the maximum distance between two volumes surface points and hence denotes outliers, especially when multiple objects are considered. It is defined as:</p>
-        <p>$$HD(A,B)=\text{max}\{\max_{a\in A}\min_{b\in B}d(a,b),\max_{b\in B}\min_{a\in A}d(b,a)\}$$</p>
-        <p>Similar to the \(ASSD\), the \(HD\) is given in \(mm\) and a lower value denotes a better segmentation.</p>
-        
-        <h3>Precision &amp; Recall</h3>
-        <p>The \(precision\) (also called positive predictive value) and \(recall\) (also known as sensitivity) of two sets are defined as</p>
-        <p>$$precision=\dfrac{TP}{TP+FP}$$ and $$recall=\dfrac{TP}{TP+FN}$$</p>
-        <p>where \(TP\) (true positive) denotes the overlapping points, \(FP\) (false positive) the wrong segmented points in the segmentation and \(FN\) (false negative) the not segmented points in the reference.</p>
-           
-        <p>Both measure take values in the range of \([0,1]\). A relatively high precision compared to the recall reveals under-segmentation and vice-versa, as depicted in the following figure:</p>
-        <div class="caption-short">
-            <img src="imgs/p-r_comp.png"	style="width: 100%; margin: 8px 0;">
-	        <strong>Fig.:</strong> Gray circle: Segmented points. Green circle: Reference points.
-        </div>  
-	     
-	   
-    <h2 class="secRanking">Ranking</h2>
-    <p>To establish a team's rank, the following steps are performed:</p>
-    <ol class="rounded-list green" style="margin-left: 0;">
-        <li>Compute the \(DC\), \(ASSD\) &amp; \(HD\) values for each case</li>
-        <li>Establish each team's rank for \(DC\), \(ASSD\) &amp; \(HD\) separately for each dataset</li>
-        <li>Compute the mean rank over all three evaluation measures/case to obtain the team's rank for the case</li>
-        <li>Compute the mean over all case-specific ranks to obtain the team's final rank</li>
-    </ol>
-    <p>This scheme is furthermore detailed in the following figure:</p>
-
-    <div class="caption-short">
-        <a href="imgs/ranking_schema_final.png" data-lightbox="ranking-schema" data-title="ISLES 2016 ranking schema"><img src="imgs/ranking_schema_final.png" alt="ranking_schema.png" style="width: 100%; margin: 8px 0;" /></a>
-	    <strong>Fig.:</strong> Overview of the ranking schema, click to enlarge.
-    </div>
-
-        <h3>Very easy or difficult cases</h3>
-        <p>By not averaging the actual evaluation measures, but rather the ranks in each, the system is not affected by very difficult or easy cases: If all methods return low results on one case, even a small difference between them will still count in the ranking. Thus, the overall impression of a method will not be distorted.</p>
-
-        <h3>Missing or not processable cases</h3>
-        <p>If a case has not been uploaded or could not be processed for some reason, the associated team will be assigned the last place for this case.</p>
-        
-        <h3>Complete mismatch</h3>
-        <p>A complete mismatch (i.e. a \(DC\) value of 0) will be seen as a missing case and treated as detailed above (the obtained \(ASSD\) &amp; \(HD\) values are then ignored).</p>
-
-        <h3>Shared ranks</h3>
-        <p>Multiple teams can share a single rank. In such a cases, the following rank will be left empty.</p>
-        
-        <h3>Multiple ground-truth</h3>
-        <p>Since we provide two ground-truth segmentations for the testing data set, a rank is computed for both and then average over both of them to obtain the final rank.</p>
-        
+    <h2>Task II: Clinical outcome</h2>
+    <p>
+        Details on the evaluation of the regression task will be provided soon.
+    </p>
 </div>
 </section>
 

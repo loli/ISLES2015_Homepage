@@ -660,16 +660,7 @@ table.gridtable {
 	margin-top: 10px;
 	margin-left: 0;
 }
-table.gridtable th {
-	width:50%;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #fff;
-	background-color: #dedede;
-}
 table.gridtable td {
-	width:50%;
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
