@@ -84,7 +84,7 @@
     <p>
         <ol class="rounded-list green" style="margin-left: 0;">
             <!--<li>See <a href="https://www.virtualskeleton.ch/ISLES/Start2016" target="_blank">VSD</a> for registration, training data download, test data download and evaluation system.</li>-->
-            <li>Data distribution postponed: New date is end of May.</li>
+            <li>We are working steadily on the training data and it should be released soon.</li>
             <li><a class="reference external" href="pdf/TentativeSchedule_v03.pdf" target="_blank">Tentative schedule</a> is out.</li>
             <li>ISLES 2016 joins with BRATS (tumor) and mTOP (traumatic brain injury) under the roof of the BrainLes workshop as a whole days event.</li>
             <li>ISLES 2016 officially registered as satellite event at MICCAI 2016!</li>
@@ -129,16 +129,16 @@
                 <td>Official launch of the website</td>
             </tr>
             <tr>
-                <td><li class="button-month">Mai</li></td>
+                <td><li class="button-month">May to June</li></td>
                 <td>Registration opens and distribution of training data</td>
             </tr>
             <tr>
-                <td><li class="button-month">25 April 2016</li></td>
-                <td>Early-bird reduced registration fees</td>
+                <td><li class="button-month">June to July</li></td>
+                <td>Opening of the evaluation system</td>
             </tr>
             <tr>
-                <td><li class="button-month">May</li></td>
-                <td>Opening of the evaluation system</td>
+                <td><li class="button-month">until August, 1st</li></td>
+                <td>Early-bird reduced registration fees</td>
             </tr>
             <tr>
                 <td><li class="button-month">August</li></td>
@@ -196,7 +196,7 @@
     </p>
 
     <h2>How it works</h2>
-    <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2016 takes place, a set of test cases will be made available and the participants upload their segmentation results (in the form of binary images, Task I) / their mRM score predictions (Task II) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2016 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will have the opportunity to present their method as a poster and, furthermore, a number of selected teams will be asked to hold a small presentation detailing their method. A number of high ranking and particularly interesting approaches will be invited to contribute to the workshops <a href="http://www.springer.com/lncs" target="_blank">LNCS</a> post-proceedings volume. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
+    <p>Interested participants can download a set of training cases (<a class="reference internal" href=".sec06">data description</a>) with associated expert segmentations of the stroke lesions to train and evaluate their approach. Shortly before MICCAI 2016 takes place, a set of test cases will be made available and the participants upload their segmentation results in the form of binary images (Task I) respectively their mRM score predictions (Task II) as well as a <a class="reference internal" href=".sec11">short paper</a> describing their method. The organizers then evaluate each case and establish a <a class="reference internal" href=".secRanking">ranking</a> of the participating teams. At the MICCAI 2016 conference, the results will be presented in the scope of a workshop and the results discussed together with invited experts. Each team will have the opportunity to present their method as a poster and, furthermore, a number of selected teams will be asked to hold a small presentation detailing their method. A number of high ranking and particularly interesting approaches will be invited to contribute to the workshops <a href="http://www.springer.com/lncs" target="_blank">LNCS</a> post-proceedings volume. After the challenge, the organizers and participants will together compose a high-impact journal paper to publish their findings.</p>
 </div>
 </section>
 
@@ -443,8 +443,8 @@ and clearance of contrast material from the involved bed is as rapid as from an 
     <h2>Acute imaging details</h2>
     <p>For this challenge, MRI sequences recorded at the time of admission are as detailed below. For more information on the sequences, see e.g. <a class="reference external" href="http://mriquestions.com" target="_blank">http://mriquestions.com</a>.</p>
     
-    <h3>DWI trace images at b=0 and b=1000</h3>
-    <p>The perfusion restriction caused by stroke shows up early in DWI images as hyperintense areas.</p>
+    <!--<h3>DWI trace images at b=0 and b=1000</h3>
+    <p>The perfusion restriction caused by stroke shows up early in DWI images as hyperintense areas.</p>-->
     
     <h3>ADC map</h3>
     <p>Constructed from the DWI images, the ADC map show the underperfused area as hypointense region. Compared to the DWI trace images, the ADC map does not suffer from confounding T2 shine-through effects.</p>
@@ -452,7 +452,7 @@ and clearance of contrast material from the involved bed is as rapid as from an 
     <h3>Raw perfusion data</h3>
     <p>Perfusion imaging (here: dynamic susceptibility imaging) denotes the perfusion of brain tissue with blood over time. The raw perfusion data are multiple 3D scans performed at equal time-intervals combined into a 4D volume.</p>
     
-    <h3>Perfusion maps (Tmax, TTP, CBV, CBF)</h3>
+    <h3>Perfusion maps (MTT, Tmax, TTP, rBV, rBF)</h3>
     <p>For clinical assessment various maps can be computed from the raw perfusion data, each of which denotes different aspects of the measured brain perfusion. For ISLES 2016, a number of maps computed via block decomposition using the <a class="reference external" href="http://www.olea-medical.com" target="_blank">Olea Sphere</a> software are provided.</p>
     
     <h2>Follow-up stroke imaging</h2>

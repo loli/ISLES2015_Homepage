@@ -198,11 +198,11 @@
      inkscape:cx="276.38126"
      inkscape:cy="85.413598"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="1535"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
+     inkscape:window-width="1920"
+     inkscape:window-height="1004"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="true"
@@ -229,7 +229,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -440,7 +440,7 @@
            y="316.55954"
            style="fill:#191919;fill-opacity:1" /></flowRegion><flowPara
          style="font-size:16px;text-align:center;text-anchor:middle;fill:#191919;fill-opacity:1"
-         id="flowPara3910-2-0-8">hours</flowPara></flowRoot>    <flowRoot
+         id="flowPara3910-2-0-8">minutes</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3796-0-1-1-8"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#191919;fill-opacity:1;stroke:none;display:inline;font-family:Myriad Pro;-inkscape-font-specification:Myriad Pro"
@@ -453,7 +453,7 @@
            y="316.55954"
            style="fill:#191919;fill-opacity:1" /></flowRegion><flowPara
          style="font-size:16px;text-align:center;text-anchor:middle;fill:#191919;fill-opacity:1"
-         id="flowPara3910-2-0-8-3">hour(s)</flowPara></flowRoot>    <flowRoot
+         id="flowPara3910-2-0-8-3">minutes</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3796-0-1-1-8-4"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#191919;fill-opacity:1;stroke:none;display:inline;font-family:Myriad Pro;-inkscape-font-specification:Myriad Pro"
@@ -466,7 +466,7 @@
            y="316.55954"
            style="fill:#191919;fill-opacity:1" /></flowRegion><flowPara
          style="font-size:16px;text-align:center;text-anchor:middle;fill:#191919;fill-opacity:1"
-         id="flowPara3910-2-0-8-3-6">90 days</flowPara></flowRoot>  </g>
+         id="flowPara3910-2-0-8-3-6">90+ days</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
