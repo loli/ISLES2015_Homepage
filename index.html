@@ -353,7 +353,11 @@
     <p>(I/O libraries: <a class="reference external" href="https://pypi.python.org/pypi/MedPy" target="_blank">MedPy</a> (Python), <a class="reference external" href="http://niftilib.sourceforge.net/" target="_blank">NiftiLib</a> (C,Java,Matlab,Python), <a class="reference external" href="http://nipy.org/nibabel/" target="_blank">Nibabel</a> (Python), <a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image" target="_blank">Tools for NIfTI and ANALYZE image</a> (Matlab), <a class="reference external" href="http://www.itk.org/" target="_blank">ITK</a> (C++))</p>
     
     <h2>Pre-processing</h2>
-    <p>All MRI sequences are skull-stripped. No other pre-processing, such as re-sampling or co-registration is performed. This allows each participant to employ their favorite algorithms.</p>
+    <p>
+      All MRI sequences are skull-stripped and anonymization was performed. No other pre-processing, such as re-sampling or co-registration is performed. This allows each participant to employ their favorite algorithms.
+
+      For the skull stripping of the structural images the <a class="reference external" href="http://www.istb.unibe.ch/content/research/medical_image_analysis/software/index_eng.html" target="_blank">stripTs tool</a> was utilized. For the PWI images, a brain mask was created with the BET algorithm from <a class="reference external" href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL</a> and the resulting mask was applied to the corresponding PWI image with the fslmath tool from FSL. Varying hand crafted parameters were chosen for the BET algorithm, depending on the respective MRI sequence. The decision of using two different algorithms for the skull stripping rests upon qualitative assessment. 
+    </p>
     
     <h2>Data details</h2>
     <p>For ISLES 2016, roughly 40 training and 50 testing cases will be made public. More details will be provided soon.</p>
