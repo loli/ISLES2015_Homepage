@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ISLES 2016 - FAQ sheet</title>
+  </head>
+  <body>
+    <h1>ISLES 2016 - FAQ sheet</h1>
+    <p>
+      Various request, questions and concerns have reached us over time. This page constitutes an attempt to collect the answers to make them readily available to all participants.
+    </p>
+
+    <!-- FAST ACCESS LIST TO QUESTIONS -->
+    <ul>
+      <li><a href="#q01">Which of the clinical data can I use in my method?</a></li>
+      <li><a href="#q02">Can I use mRS as training parameter for my method.</a></li>
+      <li><a href="#q03">How was the expert segmentation created?</a></li>
+      <li><a href="#q04">How was the expert segmentation transferred to the acute space?</a></li>
+      <li><a href="#q05">How reliable is the expert segmentation?</a></li>
+      <li><a href="#q06">Can I use other datasets to augment my training data.</a></li>
+      <li><a href="#q07">What does the column "lyse type" stand for and what does it mean whether the lyse type is 1 or 2 ?</a></li>
+      <li><a href="#q08">Why are training cases 28, 30 and 33 are missing the TTT value?</a></li>
+      <li><a href="#q09">Is this a computer vision task?</a></li>
+      <li><a href="#q10">Could you highlight the vision behind the taks some more?</a></li>
+    </ul>
+
+    <!-- QUESTIONS AND ANSWERS -->
+    <h3 id="q01">Which of the clinical data can I use in my method?</h3>
+    <p>
+      Time-since-stroke (TSS), Time-to-treatment (TTT) and the TICI score. Do not use the mRS, as this constitutes as the clinical outcome measure the target of task II and hence won't be provided with the testing set.
+    </p>
+
+    <h3 id="q02">Can I use mRS as training parameter for my method.</h3>
+    <p>
+      No. The mRS is the target of task II and hence won't be provided with the testing set.
+    </p>
+
+    <h3 id="q03">How was the expert segmentation created?</h3>
+    <p>
+      For each patient, a 90-day follow-up scan was acquired, which is assumed to show the final lesion extend. In this sequence one (training set) respectively two (testing set) experienced raters delineated the final lesion extend.
+    </p>
+
+    <h3 id="q04">How was the expert segmentation transferred to the acute space?</h3>
+    <p>
+      The anatomical follow up scan was non-rigidly registered to the acute ADC sequence and the expert segmentation transformed accordingly with nearest-neighbor interpolation.
+    </p>
+
+    <h3 id="q05">How reliable is the expert segmentation?</h3>
+    <p>
+      Experiences raters created the expert segmentation. Although each registration was visually rated, some errors might be introduced by 1. the registration to the acute ADC sequence, 2. the interpolation and 3. the partially substantial changes to the brain's anatomy. Please keep in mind that the final lesion cannot be assumed to fit the acute diffusion lesion nor the acute perfusion lesion.
+    </p>
+
+    <h3 id="q06">Can I use other datasets to augment my training data.</h3>
+    <p>
+      Yes, but we would welcome if you note the fact in your results.
+    </p>
+
+    <h3 id="q07">What does the column "lyse type" stand for and what does it mean whether the lyse type is 1 or 2 ?</h3>
+    <p>
+      Please feel free to ignore the "Lyse type" column in the table. It should not be in there and constitutes a mishap by one of our data contributors.
+    </p>
+
+    <h3 id="q08">Why are training cases 28, 30 and 33 are missing the TTT value?</h3>
+    <p>
+      Our data contributors failed to recover the TTT values for these cases. We decided for leave them in for all teams not using the clinical parameters at all. If you choose to employ this clinical parameter in your method you can either (a) remove these three cases from the training set or (b) artificially assume the average TTT over all other cases to be a sufficient approximation of the missing values. In the test data, all cases will be provided with TSS, TICI and TTT values.
+    </p>
+
+    <h3 id="q09">For  someone with a computer vision perspective, the task seems kind of unusual, and it is not a typical image segmentation problem as the ground-truth segmentations provided do not exactly correspond to the training images, but just correspond to some related images. What's the clinical motivation behind the tasks?</h3>
+    <p>
+      Medical Image Computing is rather similar to the classical Computer Vision, but differs in some concrete points such as this. 
+      For the physician, the presence and location of the acute lesion is rather obvious and all current stroke treatment protocols involve a visual check of the MRI data. What he doesn't know, is how the stroke outcome is likely to be under different conditions (which treatment, which stroke, etc.) but nevertheless he has to a potentially fatal decision as fast as possible.<br />
+      Now, the already necrotic tissue (the ischemic stroke core) and the underperfused but-yet-alive tissue (the penumbra) are assumed to be quantifiable (albeit not easily) in the acute image.<br />
+      We go a step further and follow a theory that presumes that, given clinical parameters such as the stroke age (TSS) and the treatment success (TICI score), the final lesion and probably even clinical outcome can be predicted.<br />
+      Here, computer vision meets the medical approach: Pure learning methods, such as CNN, might well be able to give good predictions (and I personally think they will). But a good model of stroke evolution, constructed with a sound background knowledge of the physical processes involved, might equally win.<br />
+      Feel free to treat the challenge as a pure computer vision problem. It would be very interesting to see, what these method can achieve. 
+    </p>
+
+    <h3 id="q10">So far, we are still not very clear about the clinical motivation behind this challenge. You mentioned in your previous answer "For the physician, although the acute lesion is obvious, he doesn't know how the stroke outcome is likely to be under different conditions (e.g., which treatment, which stroke, etc) and he has to make a fatal decision anyway as fast as possible". Therefore, if one method can predict actual lesion and clinical outcome from the acute scans alone, it can help physician to make the decision of treatment (if we understand correctly). However, in that case, some clinical parameter (e.g. TICI and mRS) should not be used as they can only be obtained after treatment. Otherwise, the motivation of task one will lose it ground.</h3>
+    <p>
+      There is a difference between outcome (be it lesion or clinical) under UNTREATED conditions and outcome under certain TREATMENT conditions. The untreated lesion outcome is assumed to coincide with the perfusion lesion (penumbra and core together) and can presumably be deduced directly from the acute PWI scans. This was, e.g., the task of last years ISLES 2015 - SPES challenge. The good results obtained by many methods show that this is indeed possible.<br />
+
+      But the treating physician is not interested in the untreated outcome, but rather in the potential benefit of treating the stroke (e.g. by thrombolysis or thrombectomy). Important is that these treatments are by no means risk-free (they can easily lead to haemorrhages and subsequently death or worse clinical outcome) and should only ever be performed when the potential benefit outweighs the risks. Furthermore, there are not always successful (see wide range of TICI scores).<br />
+
+      So what if the physician could, after acquiring the acute scans and assessing the TSS, quickly check when the next operation room might be made available (TTT) and compare the outcomes under successful (TICI=3) against unsuccessful (TICI=0) re-canalization to get a quantitative measure of the potential gain? This would allow him to make a performed treatment decision, possibly widening the treatment time window, raise the stroke treatment success and maybe even decrease mortality and disability rates.<br />
+
+    Well, that is the vision, at least. At the time of assessment, the physician has TSS, can assume TTT and wants to compare different TICI scores. The mRS should, as detailed in response to your previous question, not be used.
+    </p>
+  </body>
+</html>
